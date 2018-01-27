@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Menu.unity
+    guid: eb6bd85458cfea44b8ca7726eea14492
+  - enabled: 1
+    path: Assets/Motel Room.unity
+    guid: b05480e3a05854a4fad06678e00bff81
+  - enabled: 1
+    path: Assets/Bathroom.unity
+    guid: d6e62ff54043e884bb60de860ff8ca01
+  - enabled: 1
+    path: Assets/Sunset.unity
+    guid: da6efa4620a392547b489b0a6a7aaa8b
