@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class D1MotelDoor : MonoBehaviour {
-hihihihih
+/*
 	// Use this for initialization
 	void OnTriggerEnter(Collider other) {
 		if(other.gameObject.name == "Player"){
@@ -11,7 +11,7 @@ hihihihih
 				SceneManager.LoadScene("Sunset");
 			}
 		}
-	}
+	}*/
 	
 	// Update is called once per frame
 	void Update () {
