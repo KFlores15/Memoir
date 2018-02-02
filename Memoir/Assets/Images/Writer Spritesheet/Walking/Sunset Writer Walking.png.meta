@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9aa0da69a6319004690edf3d6356a683
-timeCreated: 1517036607
+timeCreated: 1517537760
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -95,12 +95,12 @@ TextureImporter:
       name: Sunset Writer Walking_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 33
-        height: 85
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -109,12 +109,12 @@ TextureImporter:
       name: Sunset Writer Walking_1
       rect:
         serializedVersion: 2
-        x: 42
+        x: 40
         y: 0
-        width: 37
-        height: 84
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -123,12 +123,12 @@ TextureImporter:
       name: Sunset Writer Walking_2
       rect:
         serializedVersion: 2
-        x: 82
+        x: 80
         y: 0
-        width: 35
-        height: 84
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -137,12 +137,12 @@ TextureImporter:
       name: Sunset Writer Walking_3
       rect:
         serializedVersion: 2
-        x: 125
+        x: 120
         y: 0
-        width: 28
-        height: 85
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,12 +151,12 @@ TextureImporter:
       name: Sunset Writer Walking_4
       rect:
         serializedVersion: 2
-        x: 169
+        x: 160
         y: 0
-        width: 20
-        height: 85
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Sunset Writer Walking_5
       rect:
         serializedVersion: 2
-        x: 212
+        x: 200
         y: 0
-        width: 16
-        height: 86
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,12 +179,12 @@ TextureImporter:
       name: Sunset Writer Walking_6
       rect:
         serializedVersion: 2
-        x: 246
+        x: 240
         y: 0
-        width: 26
-        height: 86
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: Sunset Writer Walking_7
       rect:
         serializedVersion: 2
-        x: 282
+        x: 280
         y: 0
-        width: 34
-        height: 85
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: Sunset Writer Walking_8
       rect:
         serializedVersion: 2
-        x: 321
+        x: 320
         y: 0
-        width: 35
-        height: 84
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,12 +221,12 @@ TextureImporter:
       name: Sunset Writer Walking_9
       rect:
         serializedVersion: 2
-        x: 363
+        x: 360
         y: 0
-        width: 31
-        height: 85
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: Sunset Writer Walking_10
       rect:
         serializedVersion: 2
-        x: 405
+        x: 400
         y: 0
-        width: 25
-        height: 86
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: Sunset Writer Walking_11
       rect:
         serializedVersion: 2
-        x: 447
+        x: 440
         y: 0
-        width: 19
-        height: 86
+        width: 39
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

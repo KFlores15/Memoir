@@ -18,7 +18,9 @@ public class Door : Interactable {
             SpriteRenderer renderer = player.GetComponent<SpriteRenderer>();
             renderer.color = (renderer.color == Color.white ? Color.black : Color.white);
         }
+
         player.transform.position = spawn;
+
         player.transform.localScale = new Vector3(face_right ? 1 : -1 , 1, 1);
     }
 }

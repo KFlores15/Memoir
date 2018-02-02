@@ -16,6 +16,6 @@ public class Load : MonoBehaviour
 
     void Add_Player()
     {
-        Instantiate(player, new Vector3(-0.46f, -0.23f, 0f), Quaternion.identity);
+		Instantiate(player, new Vector3(-0.46f, -0.23f, 0f), Quaternion.identity);
     }
 }
