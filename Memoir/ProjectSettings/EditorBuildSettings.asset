@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sunset.unity
     guid: da6efa4620a392547b489b0a6a7aaa8b
+  - enabled: 1
+    path: Assets/Scenes/SpaceStationView.unity
+    guid: 397410e3a16b70749aa441fa50f41511
+  - enabled: 1
+    path: Assets/Scenes/SpaceStationHallA.unity
+    guid: 49e7821f21b923b4d969d6c5e996e8ce

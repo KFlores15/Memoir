@@ -24,6 +24,7 @@ public class Scene_Trigger : MonoBehaviour {
             Destroy(player_collider);
             Destroy(player);
             background.sprite = cutscene;
+			GetComponent<DialogueTrigger>().TriggerDialogue(); //This shouldn't normally be called from here but it works for now... (Perhaps a separate NPC script for triggering things like dialogue)
         }
 	}
 }

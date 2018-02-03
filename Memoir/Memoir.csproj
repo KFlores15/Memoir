@@ -288,6 +288,8 @@
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\Load.cs" />
+    <Compile Include="Assets\Scripts\PH.cs" />
+    <Compile Include="Assets\Scripts\PHMusic.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
     <Compile Include="Assets\Scripts\Scene_Trigger.cs" />
   </ItemGroup>
