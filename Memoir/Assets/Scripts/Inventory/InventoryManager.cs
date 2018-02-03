@@ -3,35 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour {
-    Inventory inv;
-    public ItemManager itemManager;
-    public string ResourcesItemPath;
-    public GameObject invetorySlotPrefab; //must have an InventorySlot on it
-    public GameObject inventoryPanel;     //must be a canvas or inside of one
-    public GameObject hoverObject;        //should be lower in hierarchy than panel to display properly
+    public List<string> initialItems;       //allows you to place items in player's inventory on load
+                                            //largly for testing purposes
+                                            //currently limited to one item at a time
+    Inventory inv;                          //Backend storage of items
+    public ItemManager itemManager;         //keeps record of all possible items in game
+    public string ResourcesItemPath;        //if items get put in a sub folder in resources
+
+                                            //Game Object Requirements:
+    public GameObject invetorySlotPrefab;   //must have an InventorySlot on it
+    public GameObject inventoryPanel;       //must be a canvas or inside of one
+    public GameObject hoverObject;          //should be lower in hierarchy than panel to display properly
     List<GameObject> inventoryArray;
 
 	// Use this for initialization
 	void Start () {
-        
         inv = new Inventory();
         inventoryArray = new List<GameObject>();
-        inv.addItem("Basement Key", "basementkey1", 1);
 
         for(int i=0; i< inv.Count(); i++){
             inventoryArray.Add(InstantiateSlot(i));
         }
 
+        foreach( string item in initialItems){
+            addItem(item, 1);
+        }
 
-        addItem(new Item("Baseball Bat", "bat", 1));
-        addItem(new Item("School Papers", "papers", 12));
+        //for testing and demonstration:
+        addItem("bat", 1);
+        addItem("papers", 12);
         addItem("wand", 27);
-        addItem("test", 7);
+        addItem("test", 7); //If the Item Manager is set up properly this last one
+                            //should result in an "error". Game will run, 
+                            //but item will very clearly be wrong
 
         removeItem("bat", 1);
         renameItem("papers", "Important Documents");
         changeItemDescription("papers", "These look important, maybe I should hold onto them for now.");
         changeItemSprite("papers", "MagicBook");
+        //end of test and demonstration section
         
 	}
 	
@@ -53,7 +63,11 @@ public class InventoryManager : MonoBehaviour {
         if(index != -1) updateSlot(index);
     }
     public void addItem( string id, int number){
-        Item item = itemManager.createFromId(id);
+        Item item = new Item(id, number);
+        if(itemManager != null){
+            item = itemManager.createFromId(id);
+        }
+
         item.number = number;
         addItem(item);
     }
@@ -104,7 +118,7 @@ public class InventoryManager : MonoBehaviour {
     public void changeItemSprite(string id, string newImageName){
         int index = inv.findItemIndex(id);
         if(inv.validItem(index)){
-            inventoryArray[index].GetComponent<InventorySlot>().changeSprite(newImageName);
+            inv.changeSprite(id, newImageName);
             updateSlot(index);
         }
     }

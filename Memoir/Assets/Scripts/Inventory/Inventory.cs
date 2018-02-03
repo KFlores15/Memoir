@@ -147,31 +147,11 @@ public class Inventory {
         int index = findItemIndex(id);
         if(validItem(index)) items[index].description = newDescription;
     }
+    
+    public void changeSprite(string id, string NewSpriteName){
+        int index = findItemIndex(id);
+        if(validItem(index)) items[index].spriteName = NewSpriteName;
+    }
 
 }
 
-[System.Serializable]
-public class Item{
-    public string name = "Default Item";    //: may be displayed
-    public string id = "item0";     //: intended to be set then 
-                                    // never changed for reference in code
-    public int number = 0;          //: number in player's possession
-    public string description = "An item whose decription has not been set. Most curious...";
-
-    public Item(){}
-    public Item( string ID, int Number){
-        id = ID;
-        number = Number;
-    }
-    public Item( string Name, string ID, int Number):this(ID, Number){
-        name = Name;
-    }
-
-    public Item(string Name, string ID, int Number, string Desc): this(Name, ID, Number){
-        description = Desc;
-    }
-
-    public Item copy(){
-        return new Item(name, id, number, description);
-    }
-}

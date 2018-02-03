@@ -39,7 +39,7 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             Visable(true);
         }        
         
-        //image.sprite = Resources.Load<Sprite>(ResourcesItemPath + "bluestar");
+        image.sprite = Resources.Load<Sprite>(ResourcesItemPath + item.spriteName);
         nameText.text = item.name;
         hoverNameText.text = item.name;
         numberText.text = item.number.ToString();
