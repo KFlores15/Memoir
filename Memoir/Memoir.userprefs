@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿<Properties StartupItem="Memoir.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MotelDoor.cs">
@@ -8,16 +7,6 @@
       <File FileName="Assets\Scripts\DialogueTrigger.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Scene_Trigger.cs" Line="31" Column="1" />
       <File FileName="Assets\Scripts\MotelDoor.cs" Line="1" Column="1" />
-=======
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Scene_Trigger.cs">
-    <Files>
-      <File FileName="Assets\Scripts\DialogueManager.cs" Line="7" Column="51" />
-      <File FileName="Assets\Scripts\Dialogue.cs" Line="14" Column="1" />
-      <File FileName="Assets\Scripts\DialogueTrigger.cs" Line="14" Column="1" />
-      <File FileName="Assets\Scripts\Scene_Trigger.cs" Line="31" Column="1" />
->>>>>>> 081cc174e60cc92ec5a796ffec9c71b8c3a4a027
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
