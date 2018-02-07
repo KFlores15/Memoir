@@ -282,6 +282,7 @@ MonoBehaviour:
     id: item0
     number: 0
     description: An item whose decription has not been set. Most curious...
+    spriteName: default
   ResourcesItemPath: 
   displayPanel: {fileID: 0}
   spriteObject: {fileID: 1803647478052682}
@@ -400,7 +401,7 @@ RectTransform:
   m_GameObject: {fileID: 1272635250211418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 224672873412804544}
   - {fileID: 224171844724704918}
