@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class InventorySlot : MonoBehaviour {
 
     public Item item;                   //changing does not change underlying structure
     public string ResourcesItemPath;    // to be set by InventoryManager, not programer
@@ -12,22 +12,17 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public GameObject spriteObject;     // Set by Prefab, no need to touch
     public GameObject nameObject;       // Set by Prefab, no need to touch
     public GameObject numberObject;     // Set by Prefab, no need to touch
-    public GameObject hoverObject;      // Set by Prefab, no need to touch
-    public GameObject hoverObjectName;  
-    public GameObject hoverObjectText;  // Set by Prefab, no need to touch
+    public GameObject DescriptionObjectText;  // Set by Prefab, no need to touch
     Image image;
     Text nameText;
     Text numberText;
-    Text hoverNameText;
-    Text hoverText;
+    Text descriptionText;
     
     public void Awake() {
         image = spriteObject.GetComponent<Image>();
         nameText = nameObject.GetComponent<Text>();
         numberText = numberObject.GetComponent<Text>();
-        hoverNameText = hoverObjectName.GetComponent<Text>();
-        hoverText = hoverObjectText.GetComponent<Text>();
-        hoverObject.SetActive(false);
+        descriptionText = DescriptionObjectText.GetComponent<Text>();
     }
     
     public void UpdateSlot(Item newItem){
@@ -41,9 +36,8 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         
         image.sprite = Resources.Load<Sprite>(ResourcesItemPath + item.spriteName);
         nameText.text = item.name;
-        hoverNameText.text = item.name;
         numberText.text = item.number.ToString();
-        hoverText.text = item.description;
+        descriptionText.text = item.description;
 
         name = "InvSlot: " + item.name + ", " + item.number.ToString();
     }
@@ -55,20 +49,6 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         numberObject.SetActive(state);  
         
     }
-
-     public void OnPointerEnter(PointerEventData eventData)
-     {
-        hoverObject.SetActive(true);
-        hoverObject.transform.SetParent(displayPanel.transform.parent, true);
-     }
- 
-     public void OnPointerExit(PointerEventData eventData)
-     {
-
-        hoverObject.transform.SetParent(this.transform, true);
-        hoverObject.SetActive(false);
-     }
-
 
     public void changeSprite(string newImage){
         image.sprite = Resources.Load<Sprite>(ResourcesItemPath + newImage);

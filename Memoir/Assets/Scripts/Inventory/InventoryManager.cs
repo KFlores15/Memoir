@@ -12,12 +12,13 @@ public class InventoryManager : MonoBehaviour {
 
                                             //Game Object Requirements:
     public GameObject invetorySlotPrefab;   //must have an InventorySlot on it
-    public GameObject inventoryPanel;       //must be a canvas or inside of one
-    public GameObject hoverObject;          //should be lower in hierarchy than panel to display properly
+    public GameObject inventoryToggledPannel;      //all displayed inventory things must be under this object
+                                                   //inventory manager must be above it
+    public GameObject inventoryContentPanel;       //must be a canvas or inside of one
     List<GameObject> inventoryArray;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         inv = new Inventory();
         inventoryArray = new List<GameObject>();
 
@@ -44,12 +45,19 @@ public class InventoryManager : MonoBehaviour {
         //end of test and demonstration section
         
 	}
-	
+
+    public void Update() {
+        //open or close menu
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            inventoryToggledPannel.SetActive(!inventoryToggledPannel.activeInHierarchy);
+        }
+    }
+
     GameObject InstantiateSlot(int index){
-        GameObject invSlot = Instantiate(invetorySlotPrefab, inventoryPanel.transform);
+        GameObject invSlot = Instantiate(invetorySlotPrefab, inventoryContentPanel.transform);
         InventorySlot slot = invSlot.GetComponent<InventorySlot>();
         slot.ResourcesItemPath = ResourcesItemPath;
-        slot.displayPanel = inventoryPanel;
+        slot.displayPanel = inventoryContentPanel;
         slot.UpdateSlot(inv.getItem(index));
         //slot.hoverObject = hoverObject;
         return invSlot;
