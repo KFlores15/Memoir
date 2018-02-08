@@ -7,7 +7,7 @@ public class Interactable : MonoBehaviour {
     public GameObject player;
     public Collider2D player_collider;
     
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         player_collider = player.GetComponent<BoxCollider2D>();

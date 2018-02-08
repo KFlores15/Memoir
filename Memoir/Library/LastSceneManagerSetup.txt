@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Menu.unity
+=======
+- path: Assets/Scenes/SpaceStationHallA.unity
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
   isLoaded: 1
   isActive: 1

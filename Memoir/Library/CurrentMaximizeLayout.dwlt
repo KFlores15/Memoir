@@ -19,12 +19,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1350
     height: 619
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
   controlID: 109
+=======
+    width: 1366
+    height: 635
+  m_MinSize: {x: 711, y: 492}
+  m_MaxSize: {x: 18006, y: 14042}
+  vertical: 0
+  controlID: 12399
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -118,10 +127,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 287
     height: 619
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+    width: 290
+    height: 635
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
   m_ActualView: {fileID: 4}
   m_Panes:
   - {fileID: 4}
@@ -149,6 +165,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 100
     width: 285
@@ -159,6 +176,18 @@ MonoBehaviour:
     m_SelectedIDs: fa2b0000
     m_LastClickedID: 11258
     m_ExpandedIDs: 12f1ffffb0f3ffff00000000
+=======
+    x: 0
+    y: 92
+    width: 288
+    height: 614
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 185cf9ff
+    m_LastClickedID: -435176
+    m_ExpandedIDs: 4c61f9ff0a65f9ff1a6df9ffb092f9ff1cc4f9ffb087faff548efaffb6bafbffbcbbfbff00c1fbff1acefbff3cd6fbff5afefbff1a00fcff5601fcff8e04fcffba1afcfff6d7fcfff2defcffd40efdff2610fdffaa16fdffec24fdff1427fdffde4bfdff4454fdff7870fdffaa3bffff345cffffa4a8ffff5cb2ffffb0b7ffff1cf8ffff00000000
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -197,6 +226,7 @@ MonoBehaviour:
   - {fileID: 10}
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 287
     y: 0
     width: 669
@@ -205,6 +235,16 @@ MonoBehaviour:
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
   controlID: 70
+=======
+    x: 290
+    y: 0
+    width: 677
+    height: 635
+  m_MinSize: {x: 234, y: 492}
+  m_MaxSize: {x: 10004, y: 14042}
+  vertical: 1
+  controlID: 12380
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,8 +261,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 669
     height: 348
+=======
+    width: 677
+    height: 364
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 2}
@@ -255,10 +300,17 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 297
     y: 100
     width: 665
     height: 327
+=======
+    x: 292
+    y: 92
+    width: 673
+    height: 343
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 23358.869308380188
@@ -266,9 +318,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -1.5250169, y: -1.044943, z: 0.09888731}
     speed: 2
     m_Value: {x: -1.5250169, y: -1.044943, z: 0.09888731}
+=======
+    m_Target: {x: -1.4103543, y: -0.99554986, z: 0.09666424}
+    speed: 2
+    m_Value: {x: -1.4103543, y: -0.99554986, z: 0.09666424}
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -296,9 +354,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 4.776665
     speed: 2
     m_Value: 4.776665
+=======
+    m_Target: 5.001744
+    speed: 2
+    m_Value: 5.001744
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -396,8 +460,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 348
     width: 669
+=======
+    y: 364
+    width: 677
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
     height: 271
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
@@ -431,9 +500,15 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 297
     y: 448
     width: 665
+=======
+    x: 292
+    y: 456
+    width: 673
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
     height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -448,19 +523,25 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Harpreet\Documents\GitHub\Memoir\Memoir
+  m_LastProjectPath: C:\Users\Kevin\Desktop\Memoir(W2)\Memoir
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 302b0000
     m_LastClickedID: 11056
     m_ExpandedIDs: 00000000ca290000822a0000782b000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: b4290000
+    m_LastClickedID: 10676
+    m_ExpandedIDs: 0000000016290000b2290000902a000000ca9a3bffffff7f
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +569,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 62290000
     m_LastClickedID: 10594
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ca290000822a0000782b0000
+=======
+    m_ExpandedIDs: 0000000016290000b2290000902a000000ca9a3bffffff7f
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -513,9 +598,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: fa2b0000
     m_LastClickedInstanceID: 11258
     m_HadKeyboardFocusLastEvent: 1
+=======
+    m_SelectedInstanceIDs: 185cf9ff
+    m_LastClickedInstanceID: -435176
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
     m_ExpandedInstanceIDs: c623000000290000482600008426000088290000e429000056280000162800001c290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -664,8 +755,12 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 0}
-  m_BreadCrumbs: []
+  m_AnimatorController: {fileID: 9100000, guid: 4597acd2cf9519f49affe5f9fa122111,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107575266566192106, guid: 4597acd2cf9519f49affe5f9fa122111,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -690,12 +785,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 956
     y: 0
     width: 394
     height: 619
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    x: 967
+    y: 0
+    width: 399
+    height: 635
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -723,10 +827,17 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 966
     y: 100
     width: 392
     height: 598
+=======
+    x: 969
+    y: 92
+    width: 397
+    height: 614
+>>>>>>> parent of 69b16d7... Fixed teleportation bug and added screen fading
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
