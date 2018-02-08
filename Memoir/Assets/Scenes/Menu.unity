@@ -898,6 +898,7 @@ GameObject:
   - component: {fileID: 1689779982}
   - component: {fileID: 1689779984}
   - component: {fileID: 1689779983}
+  - component: {fileID: 1689779985}
   m_Layer: 5
   m_Name: Inventory Manager
   m_TagString: Untagged
@@ -966,6 +967,17 @@ MonoBehaviour:
     type: 2}
   inventoryToggledPannel: {fileID: 631674039}
   inventoryContentPanel: {fileID: 1930236695}
+--- !u!114 &1689779985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1689779981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519046e84c4b6d545850b3c0f20109e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1693633953
 GameObject:
   m_ObjectHideFlags: 0

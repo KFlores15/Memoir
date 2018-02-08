@@ -29,20 +29,6 @@ public class InventoryManager : MonoBehaviour {
         foreach( string item in initialItems){
             addItem(item, 1);
         }
-
-        //for testing and demonstration:
-        addItem("bat", 1);
-        addItem("papers", 12);
-        addItem("wand", 27);
-        addItem("test", 7); //If the Item Manager is set up properly this last one
-                            //should result in an "error". Game will run, 
-                            //but item will very clearly be wrong
-
-        removeItem("bat", 1);
-        renameItem("papers", "Important Documents");
-        changeItemDescription("papers", "These look important, maybe I should hold onto them for now.");
-        changeItemSprite("papers", "MagicBook");
-        //end of test and demonstration section
         
 	}
 
@@ -59,7 +45,6 @@ public class InventoryManager : MonoBehaviour {
         slot.ResourcesItemPath = ResourcesItemPath;
         slot.displayPanel = inventoryContentPanel;
         slot.UpdateSlot(inv.getItem(index));
-        //slot.hoverObject = hoverObject;
         return invSlot;
     }
 
