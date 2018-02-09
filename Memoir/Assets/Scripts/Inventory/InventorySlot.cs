@@ -32,9 +32,13 @@ public class InventorySlot : MonoBehaviour {
             Visable(false);
         }else{
             Visable(true);
-        }        
-        
-        image.sprite = Resources.Load<Sprite>(ResourcesItemPath + item.spriteName);
+        }
+
+        Sprite sprite = Resources.Load<Sprite>(ResourcesItemPath + item.spriteName);
+        if(sprite != null){
+            image.sprite = sprite;
+        }
+        print(item.name);
         nameText.text = item.name;
         numberText.text = item.number.ToString();
         descriptionText.text = item.description;

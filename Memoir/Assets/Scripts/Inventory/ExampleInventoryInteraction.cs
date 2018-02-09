@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ExampleInventoryInteraction : MonoBehaviour {
     
-	void Start () {
+	void Awake () {
         //for testing and demonstration:
         InventoryManager im = GameObject.Find("Inventory Manager").GetComponent<InventoryManager>();
 
