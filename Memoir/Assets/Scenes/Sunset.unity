@@ -145,8 +145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.2, y: -15.6}
-  m_SizeDelta: {x: 370.89, y: 46.83}
+  m_AnchoredPosition: {x: -42.64, y: -20}
+  m_SizeDelta: {x: 503.61, y: 46.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &116286269
 MonoBehaviour:
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -370,16 +370,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    NPCName: Mom
+    NPCName: Overlooking the city...
     textContent:
-    - It's amazing isn't it?
-    - Your father and I used to dream of living in one of the skyscrapers.
-    - Would you want that?
-    - What do you dream of becoming when you grow up?
-    - I'm sure you'll be a great writer.
-    - It's a nice dream to have, a purpose in life to strive for.
-    - But sometimes you have to remember that dreams are fantasies.
-    - They're not really real and they'll never be real.
+    - 'Mom: It''s amazing isn''t it?'
+    - 'You: Hmm...?'
+    - 'Mom: The city...this view...'
+    - 'Mom: You know, your father and I used to dream of living in one of the skyscrapers.'
+    - 'You: I''m sure the view would wonderful.'
+    - 'Mom: Would you want that?'
+    - 'You: I... suppose. But what I really want is to make my dream a reality. '
+    - 'Mom: What do you dream of becoming when you grow up?'
+    - 'You: A writer, for sure.'
+    - 'Mom: Oh... I''m sure you''ll be a great writer.'
+    - 'You: I hope so, writing is everything to me.'
+    - 'Mom: It''s a nice dream to have, a purpose in life to strive for.'
+    - 'You: I need to follow my dreams, for what else is there to do in life?'
+    - 'Mom: But sometimes you have to remember that dreams are fantasies.'
+    - 'Mom: They''re not really real and they''ll never be real.'
+    - 'You: Perhaps.....'
 --- !u!1 &788121322
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +399,7 @@ GameObject:
   - component: {fileID: 788121326}
   - component: {fileID: 788121325}
   - component: {fileID: 788121324}
+  - component: {fileID: 788121327}
   m_Layer: 0
   m_Name: DialoguePanel
   m_TagString: Untagged
@@ -416,8 +425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517578, y: -311}
-  m_SizeDelta: {x: 509.2, y: 95}
+  m_AnchoredPosition: {x: 0.0000038146973, y: -230.31802}
+  m_SizeDelta: {x: 616.8, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &788121324
 Animator:
@@ -442,7 +451,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 788121322}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -469,6 +478,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 788121322}
+--- !u!225 &788121327
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 788121322}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1299781796
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,8 +597,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -59.200012, y: 25.810005}
-  m_SizeDelta: {x: 370.89, y: 30}
+  m_AnchoredPosition: {x: -42.64, y: 21.409992}
+  m_SizeDelta: {x: 503.61, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410039135
 MonoBehaviour:
@@ -592,7 +612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.9558824, g: 0.87987715, b: 0.56228375, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -666,7 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1270,8 +1290,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186, y: -27.945}
-  m_SizeDelta: {x: 94.06, y: 16.94}
+  m_AnchoredPosition: {x: 265.1, y: -29.19}
+  m_SizeDelta: {x: 69.99, y: 21.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2132378044
 MonoBehaviour:
@@ -1293,8 +1313,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.5588235, g: 0.5588235, b: 0.5588235, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.9558824, g: 0.87987715, b: 0.56228375, a: 1}
+    m_PressedColor: {r: 0.71323526, g: 0.6585491, b: 0.4300389, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1308,7 +1328,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2132378045}
+  m_TargetGraphic: {fileID: 1543815569}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1403,12 +1423,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1422,7 +1442,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1957844787}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
