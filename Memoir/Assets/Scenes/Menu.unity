@@ -963,7 +963,7 @@ MonoBehaviour:
   - wand
   itemManager: {fileID: 1689779983}
   ResourcesItemPath: 
-  invetorySlotPrefab: {fileID: 1087855675490004, guid: 9e0c586d65d259443acbb7be4ee5f075,
+  invetorySlotPrefab: {fileID: 1087855675490004, guid: e36eaa46041e00040b9761f3caa02848,
     type: 2}
   inventoryToggledPannel: {fileID: 631674039}
   inventoryContentPanel: {fileID: 1930236695}
