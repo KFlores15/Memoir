@@ -586,18 +586,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1817345460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fc451863df355d42b05a807c6338ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactable_collider: {fileID: 1817345461}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  load: 1
-  spawn: {x: 1.2, y: -0.23}
+  load: 4
+  spawn: {x: 1.6, y: -0.15}
   face_right: 0
   change_sprite: 0
-  player_exists_in_next_room: 0
-  player: {fileID: 0}
 --- !u!1 &1994765333
 GameObject:
   m_ObjectHideFlags: 0

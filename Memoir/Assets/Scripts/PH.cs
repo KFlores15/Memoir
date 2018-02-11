@@ -1,22 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PH : MonoBehaviour {
 
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetMouseButton(1)){
-			Application.LoadLevel(Application.loadedLevel + 1);
-		}
+public class PH : Interactable {
+    public int load;
+    public Vector2 spawn;
+    public bool face_right;
+    public bool change_sprite;
 
-		/* if(Input.GetMouseButton(1)){
-			Application.LoadLevel(Application.loadedLevel - 1);
-		} */
+    public override void Interact()
+    {
+        SceneManager.LoadScene(load);
+        if(change_sprite)
+        {
+            SpriteRenderer renderer = player.GetComponent<SpriteRenderer>();
+            renderer.color = (renderer.color == Color.white ? Color.black : Color.white);
+        }
 
-	}
+        player.transform.position = spawn;
+
+        player.transform.localScale = new Vector3(face_right ? 1 : -1 , 1, 1);
+    }
 }

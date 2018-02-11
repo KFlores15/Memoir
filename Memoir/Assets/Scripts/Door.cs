@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -52,3 +52,4 @@ public class Door : Interactable {
         player.transform.localScale = new Vector3(face_right ? 1 : -1, 1, 1);
     }
 }
+*/

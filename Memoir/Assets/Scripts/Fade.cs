@@ -35,7 +35,7 @@ public class Fade : MonoBehaviour
         return (fade_speed);
     }
 
-    void OnLevelWasLoaded()
+    void Loaded()
     {
         BeginFade(-1);
     }
