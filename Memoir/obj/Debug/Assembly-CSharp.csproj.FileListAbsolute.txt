@@ -72,3 +72,5 @@ C:\Users\Matt\Documents\GitHub\Memoir\Memoir\Temp\bin\Debug\UnityEditor.SpatialT
 C:\Users\Matt\Documents\GitHub\Memoir\Memoir\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 C:\Users\Matt\Documents\GitHub\Memoir\Memoir\Temp\bin\Debug\UnityEditor.VR.xml
 C:\Users\Matt\Documents\GitHub\Memoir\Memoir\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+C:\Users\Mayank\Desktop\School\UCSC\Winter 2017\Memoir\Memoir\Memoir\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Mayank\Desktop\School\UCSC\Winter 2017\Memoir\Memoir\Memoir\obj\Debug\Assembly-CSharp.dll
