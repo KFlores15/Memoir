@@ -9,12 +9,19 @@ public class Load : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Add_Player();
-            SceneManager.LoadScene("Motel Room");
+			StartCoroutine(waitForLoad());
+            
         }
     }
 
-    void Add_Player()
+	IEnumerator waitForLoad() {
+		yield return new WaitForSecondsRealtime(0.5f);
+		SceneManager.LoadScene("Motel Room");
+		//yield return new WaitForSecondsRealtime(1);
+		Add_Player();
+	}
+
+   	void Add_Player()
     {
 		Instantiate(player, new Vector3(-0.46f, -0.23f, 0f), Quaternion.identity);
     }

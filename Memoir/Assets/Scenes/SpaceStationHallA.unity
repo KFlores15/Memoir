@@ -154,7 +154,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -165,7 +165,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.512
+  orthographic size: 1.521598
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 343293612}
   - component: {fileID: 343293611}
   - component: {fileID: 343293610}
+  - component: {fileID: 343293614}
   m_Layer: 0
   m_Name: HallwayDoor
   m_TagString: Untagged
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 343293609}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fc451863df355d42b05a807c6338ed3, type: 3}
   m_Name: 
@@ -306,12 +307,30 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 343293609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.746, y: -0.164, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.9523, y: -0.16, z: 0}
+  m_LocalScale: {x: 0.28859574, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &343293614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343293609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 343293611}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  load: 6
+  spawn: {x: 1.5, y: -0.15}
+  face_right: 0
+  change_sprite: 0
 --- !u!1 &815735756
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +342,7 @@ GameObject:
   - component: {fileID: 815735759}
   - component: {fileID: 815735758}
   - component: {fileID: 815735757}
+  - component: {fileID: 815735761}
   m_Layer: 0
   m_Name: RUUUUUUN
   m_TagString: Untagged
@@ -336,7 +356,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 815735756}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fc451863df355d42b05a807c6338ed3, type: 3}
   m_Name: 
@@ -424,12 +444,30 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 815735756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.905, y: -0.083, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9484, y: -0.17, z: 0}
+  m_LocalScale: {x: 0.26175058, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &815735761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 815735756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 815735758}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  load: 7
+  spawn: {x: -1.5, y: -0.15}
+  face_right: 1
+  change_sprite: 0
 --- !u!1 &1334184791
 GameObject:
   m_ObjectHideFlags: 0

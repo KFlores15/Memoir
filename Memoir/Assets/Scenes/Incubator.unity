@@ -154,7 +154,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -165,7 +165,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.52
+  orthographic size: 1.521598
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 1898891468}
   - component: {fileID: 1898891467}
   - component: {fileID: 1898891470}
+  - component: {fileID: 1898891471}
   m_Layer: 0
   m_Name: EdgeDoorINC
   m_TagString: Untagged
@@ -449,8 +450,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1898891466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.95, y: -0.317, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.9401, y: -0.2, z: 0}
+  m_LocalScale: {x: 0.31544092, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -461,9 +462,27 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1898891466}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fc451863df355d42b05a807c6338ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 1898891467}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  load: 5
+  spawn: {x: -1.5, y: -0.15}
+  face_right: 1
+  change_sprite: 0
+--- !u!114 &1898891471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1898891466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactable_collider: {fileID: 1898891467}
