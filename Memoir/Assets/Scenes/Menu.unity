@@ -787,7 +787,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1446546101}
   - component: {fileID: 1446546102}
-  - component: {fileID: 1446546103}
   m_Layer: 0
   m_Name: Playspace
   m_TagString: Untagged
@@ -820,21 +819,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1936464473030890, guid: a47cadad1c607ab4aba53470ef1e9bcd, type: 2}
---- !u!114 &1446546103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1446546100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d17ab37f5c7c705498945a68814f081e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactable_collider: {fileID: 0}
-  player: {fileID: 0}
-  player_collider: {fileID: 0}
-  fade: {fileID: 0}
 --- !u!1 &1609826635
 GameObject:
   m_ObjectHideFlags: 0
