@@ -299,6 +299,9 @@
     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
     <Compile Include="Assets\Scripts\Inventory\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Load.cs" />
+    <Compile Include="Assets\Scripts\Music\PHMusic1.cs" />
+    <Compile Include="Assets\Scripts\Music\PHMusic2.cs" />
+    <Compile Include="Assets\Scripts\Music\PHMusic3.cs" />
     <Compile Include="Assets\Scripts\PH.cs" />
     <Compile Include="Assets\Scripts\PH_NoDoor.cs" />
     <Compile Include="Assets\Scripts\PHMusic.cs" />
