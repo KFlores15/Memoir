@@ -45,7 +45,7 @@ public class Monster : MonoBehaviour
 	//waits for fade and then destroys monster and 'kills' the friend
 	IEnumerator Wait()
 	{
-		yield return new WaitForSecondsRealtime(0.5f);
+		yield return new WaitForSecondsRealtime(0.1f);
 		Destroy(gameObject);
         SceneManager.LoadScene(load);
 		player.transform.position = spawn;

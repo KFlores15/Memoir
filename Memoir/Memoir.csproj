@@ -291,6 +291,7 @@
     <Compile Include="Assets\Scripts\Fade.cs" />
     <Compile Include="Assets\Scripts\FadeTrigger.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Interactable_Canvas.cs" />
     <Compile Include="Assets\Scripts\Interactable_NoDoor.cs" />
     <Compile Include="Assets\Scripts\Inventory\ExampleInventoryInteraction.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
@@ -299,9 +300,11 @@
     <Compile Include="Assets\Scripts\Inventory\Item.cs" />
     <Compile Include="Assets\Scripts\Inventory\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Load.cs" />
+    <Compile Include="Assets\Scripts\Monster.cs" />
     <Compile Include="Assets\Scripts\Music\PHMusic1.cs" />
     <Compile Include="Assets\Scripts\Music\PHMusic2.cs" />
     <Compile Include="Assets\Scripts\Music\PHMusic3.cs" />
+    <Compile Include="Assets\Scripts\Music\UIAppear.cs" />
     <Compile Include="Assets\Scripts\PH.cs" />
     <Compile Include="Assets\Scripts\PH_NoDoor.cs" />
     <Compile Include="Assets\Scripts\PHMusic.cs" />
@@ -310,11 +313,6 @@
     <Compile Include="Assets\Scripts\ScalingBackground.cs" />
     <Compile Include="Assets\Scripts\Scene_Trigger.cs" />
     <Compile Include="Assets\Scripts\SpaceCutscne1.cs" />
-    <Compile Include="Assets\Scripts\TEmp\Display.cs" />
-    <Compile Include="Assets\Scripts\TEmp\FieldOfView.cs" />
-    <Compile Include="Assets\Scripts\TEmp\GenericMonster.cs" />
-    <Compile Include="Assets\Scripts\TEmp\GenericMonster1.cs" />
-    <Compile Include="Assets\Scripts\TEmp\Monster.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

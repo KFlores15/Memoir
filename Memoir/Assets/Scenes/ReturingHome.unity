@@ -204,7 +204,6 @@ GameObject:
   - component: {fileID: 963867795}
   - component: {fileID: 963867794}
   - component: {fileID: 963867793}
-  - component: {fileID: 963867792}
   - component: {fileID: 963867796}
   m_Layer: 0
   m_Name: ExitToHallway
@@ -213,24 +212,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &963867792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 963867791}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fc451863df355d42b05a807c6338ed3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactable_collider: {fileID: 963867793}
-  player: {fileID: 0}
-  player_collider: {fileID: 0}
-  load: 5
-  spawn: {x: 1.6, y: -0.15}
-  face_right: 0
-  change_sprite: 0
 --- !u!61 &963867793
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -327,7 +308,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 963867793}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  load: 5
+  load: 7
   spawn: {x: 1.6, y: -0.15}
   face_right: 0
   change_sprite: 0
@@ -486,7 +467,6 @@ GameObject:
   - component: {fileID: 2138554822}
   - component: {fileID: 2138554821}
   - component: {fileID: 2138554820}
-  - component: {fileID: 2138554819}
   - component: {fileID: 2138554823}
   m_Layer: 0
   m_Name: ExitToBathroom
@@ -495,24 +475,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2138554819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2138554818}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fc451863df355d42b05a807c6338ed3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactable_collider: {fileID: 2138554820}
-  player: {fileID: 0}
-  player_collider: {fileID: 0}
-  load: 8
-  spawn: {x: -0.85, y: -0.36}
-  face_right: 1
-  change_sprite: 0
 --- !u!61 &2138554820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -609,7 +571,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 2138554820}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  load: 8
+  load: 10
   spawn: {x: -0.85, y: -0.36}
   face_right: 1
   change_sprite: 0

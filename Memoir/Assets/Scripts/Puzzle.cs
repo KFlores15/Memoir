@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Puzzle : MonoBehaviour {
 
 	public static string correctCode="397";
-	public static string playerCode = "";
-
+	private string playerCode = "";
+	private int totalDigits = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -15,14 +18,28 @@ public class Puzzle : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (playerCode);
+		playerCode += getValue();
+		totalDigits++;
+		Debug.Log("Player Code: " + playerCode);
 
+		if(totalDigits == 3 && playerCode==correctCode){
+			playerCode="";
+			totalDigits = 0;
+			Debug.Log("Correct!");
+			SceneManager.LoadScene("SpaceStationHallA 1");
+		}
+		else if (totalDigits == 3) {
+			playerCode="";
+			totalDigits = 0;
+			Debug.Log("Incorrect!");
+		}
 	}
 
-	void OnMouseUp()
-	{
-		playerCode += gameObject.name;
-		totalDigits += 1;
+	string getValue() {
+		string buttonPushed;
+		buttonPushed = EventSystem.current.currentSelectedGameObject.name;
+		EventSystem.current.SetSelectedGameObject(null);
+		//Debug.Log(buttonPushed);
+		return buttonPushed;
 	}
-	
 }

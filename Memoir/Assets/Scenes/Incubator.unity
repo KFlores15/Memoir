@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 157192178}
   - component: {fileID: 157192177}
   - component: {fileID: 157192176}
-  - component: {fileID: 157192180}
+  - component: {fileID: 157192179}
   m_Layer: 0
   m_Name: Envy and Pride Proto
   m_TagString: Untagged
@@ -207,13 +207,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 157192175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.064, y: -0.138, z: 0}
+  m_LocalPosition: {x: -1.18, y: -0.138, z: 0}
   m_LocalScale: {x: 1, y: 0.68540055, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &157192180
+--- !u!114 &157192179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -221,13 +221,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 157192175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a46eb3601b385494687b7c48d94c1e08, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a01b20c44febb84c90607951b743be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rend: {fileID: 157192177}
   player: {fileID: 1936464473030890, guid: a47cadad1c607ab4aba53470ef1e9bcd, type: 2}
   spawn: {x: -0.85, y: -0.36}
-  load: 8
+  load: 10
   face_right: 1
 --- !u!1 &215693306
 GameObject:
@@ -816,7 +816,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 1898891467}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  load: 5
+  load: 7
   spawn: {x: -1.5, y: -0.15}
   face_right: 1
   change_sprite: 0
@@ -834,7 +834,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 1898891467}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  load: 5
+  load: 7
   spawn: {x: -1.5, y: -0.15}
   face_right: 1
   change_sprite: 0
