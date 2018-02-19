@@ -1021,6 +1021,7 @@ GameObject:
   - component: {fileID: 1065391057}
   - component: {fileID: 1065391056}
   - component: {fileID: 1065391059}
+  - component: {fileID: 1065391060}
   m_Layer: 0
   m_Name: doorToBathroom
   m_TagString: Untagged
@@ -1128,6 +1129,21 @@ MonoBehaviour:
   spawn: {x: -0.855, y: -0.351}
   face_right: 1
   change_sprite: 0
+--- !u!114 &1065391060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065391055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17ab37f5c7c705498945a68814f081e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 0}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  fade: {fileID: 0}
 --- !u!1 &1230173302
 GameObject:
   m_ObjectHideFlags: 0

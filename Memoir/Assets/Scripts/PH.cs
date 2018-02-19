@@ -18,9 +18,20 @@ public class PH : Interactable {
             SpriteRenderer renderer = player.GetComponent<SpriteRenderer>();
             renderer.color = (renderer.color == Color.white ? Color.black : Color.white);
         }
+		StartCoroutine(waitForLoad());
+		player.transform.position = spawn;
 
-        player.transform.position = spawn;
-
-        player.transform.localScale = new Vector3(face_right ? 1 : -1 , 1, 1);
+		player.transform.localScale = new Vector3(face_right ? 1 : -1 , 1, 1);
+        
     }
+
+	IEnumerator waitForLoad() {
+		yield return new WaitForSecondsRealtime(0.5f);
+		Add_Player();
+	}
+
+	void Add_Player()
+	{
+		
+	}
 }
