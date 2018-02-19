@@ -438,6 +438,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabc8673e6dbe6a42a2efa0eb989d833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  load: 5
+  spawn: {x: 0, y: 0}
+  face_right: 0
+  change_sprite: 0
 --- !u!68 &1261798118
 EdgeCollider2D:
   m_ObjectHideFlags: 0
