@@ -4,4 +4,40 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: eb6bd85458cfea44b8ca7726eea14492
+  - enabled: 1
+    path: Assets/Scenes/Motel Room.unity
+    guid: b05480e3a05854a4fad06678e00bff81
+  - enabled: 1
+    path: Assets/Scenes/Bathroom.unity
+    guid: d6e62ff54043e884bb60de860ff8ca01
+  - enabled: 1
+    path: Assets/Scenes/Sunset.unity
+    guid: da6efa4620a392547b489b0a6a7aaa8b
+  - enabled: 1
+    path: Assets/Scenes/SpaceStationView.unity
+    guid: 397410e3a16b70749aa441fa50f41511
+  - enabled: 1
+    path: Assets/Scenes/SpaceStationHallA.unity
+    guid: 49e7821f21b923b4d969d6c5e996e8ce
+  - enabled: 1
+    path: Assets/Scenes/Testing.unity
+    guid: ba7ed3fd3ed9fad439119b69ac880227
+  - enabled: 1
+    path: Assets/Scenes/SpaceStationHallA 1.unity
+    guid: 2ad5f0126f17eef47978a891e892fa02
+  - enabled: 1
+    path: Assets/Scenes/Incubator.unity
+    guid: 0bab6c8618b7d4f4c86426a42eea28fc
+  - enabled: 1
+    path: Assets/Scenes/ReturingHome.unity
+    guid: d3344440f7acab04b8401d83a64283dc
+  - enabled: 1
+    path: Assets/Scenes/Bathroom 1.unity
+    guid: 12d043d9956699443bcbf75d6a497562
+  - enabled: 1
+    path: Assets/Scenes/Motel Room 1.unity
+    guid: e7b74219ccbae98498e1e24a2a4f563f
