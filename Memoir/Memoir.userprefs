@@ -1,13 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Puzzle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Interactable.cs">
     <Files>
-      <File FileName="Assets\Scripts\PH.cs" Line="17" Column="10" />
-      <File FileName="Assets\Scripts\PH_NoDoor.cs" Line="7" Column="45" />
-      <File FileName="Assets\Scripts\Interactable.cs" Line="6" Column="45" />
-      <File FileName="Assets\Scripts\Interactable_NoDoor.cs" Line="24" Column="25" />
-      <File FileName="Assets\Scripts\Load.cs" Line="4" Column="1" />
-      <File FileName="Assets\Scripts\Puzzle.cs" Line="23" Column="3" />
+      <File FileName="Assets\Scripts\Interactable.cs" Line="30" Column="40" />
+      <File FileName="Assets\Scripts\HoverText.cs" Line="24" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

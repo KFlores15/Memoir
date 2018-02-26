@@ -13,6 +13,28 @@ public class Interactable : MonoBehaviour {
         player_collider = player.GetComponent<BoxCollider2D>();
     }
 
+	//check if player is colliding with the door hitbox
+	//triggers the text script component of the text object on/off 
+	void Update() {
+		if (player_collider.IsTouching(interactable_collider))
+		{
+			openDoor();
+			HoverText.displayText = true;
+		}
+		else {
+			HoverText.displayText = false;
+		}
+
+	}
+
+	//only enables interaction when called
+	void openDoor() {
+		if(Input.GetKeyDown("space")) {
+			Interact();
+		}
+	}
+		
+	/*
     void OnMouseDown()
     {
         if (player_collider.IsTouching(interactable_collider))
@@ -20,6 +42,7 @@ public class Interactable : MonoBehaviour {
             Interact();
         }
     }
+    */
 
     public virtual void Interact() { 
 	}
