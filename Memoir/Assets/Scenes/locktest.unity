@@ -443,7 +443,18 @@ MonoBehaviour:
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1641052654}
+        m_MethodName: PuzzleSubmit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.InputField+SubmitEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
@@ -877,6 +888,11 @@ MonoBehaviour:
   int3: {fileID: 1216114018}
   int4: {fileID: 752330045}
   debug: {fileID: 744865244}
+  images:
+  - {fileID: 184552457}
+  - {fileID: 1805569272}
+  - {fileID: 1216114018}
+  - {fileID: 752330045}
 --- !u!4 &1641052655
 Transform:
   m_ObjectHideFlags: 0

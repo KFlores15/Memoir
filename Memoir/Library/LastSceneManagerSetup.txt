@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/SpaceStationHallA.unity
+- path: Assets/Scenes/locktest.unity
   isLoaded: 1
   isActive: 1
