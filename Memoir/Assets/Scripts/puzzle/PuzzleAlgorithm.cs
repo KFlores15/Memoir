@@ -20,6 +20,7 @@ public class PuzzleAlgorithm : MonoBehaviour {
 	public void PuzzleSubmit(){
 		int G = 0;
 		int tempsol = sol;
+		int finishState = 0;
 		string result = "";
 		G = int.Parse (input.text);
 		for(int i = 3; i >= 0 ; i--) {
@@ -28,12 +29,15 @@ public class PuzzleAlgorithm : MonoBehaviour {
 			if(Isol == Iguess){
 				images [i].color = Color.green;
 				result = "= " + result;
+				finishState++;
 			}else if(Isol > Iguess){
 				images [i].color = Color.yellow;
 				result = "< " + result;
+				finishState--;
 			}else{
 				images [i].color = Color.blue;
 				result = "> " + result;
+				finishState--;
 			}
 			tempsol = tempsol / 10;
 			G = G / 10;
@@ -44,6 +48,10 @@ public class PuzzleAlgorithm : MonoBehaviour {
 		} else {
 			debug.text = "ERROR: result was not calculated";
 		}*/
+		if (finishState == 4) {
+			debug.text = "solution found, implement finish listener";
+
+		}
 		input.ActivateInputField ();
 	}   
 }
