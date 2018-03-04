@@ -14,7 +14,7 @@ public class Monster : MonoBehaviour
     int timer;
     int bound;
 
-    private bool follow = true;
+    //private bool follow = true;
     void Start()
     {
         rend = GetComponent<Renderer>();

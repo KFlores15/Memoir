@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Eraser.cs" />
+     <Compile Include="Assets\mouseSpeed.cs" />
      <Compile Include="Assets\Scripts\DeactivateOnStart.cs" />
      <Compile Include="Assets\Scripts\Dialogue.cs" />
      <Compile Include="Assets\Scripts\DialogueManager.cs" />
