@@ -13,17 +13,18 @@ public class mouseSpeed : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        dis = 3f;
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetMouseButtonDown(1) && Input.mousePosition.x > 432 && Input.mousePosition.x < 452
-            && Input.mousePosition.y > 280 && Input.mousePosition.y < 295)
+        if (Input.GetMouseButtonDown(1) && Input.mousePosition.x > 355 && Input.mousePosition.x < 375
+            && Input.mousePosition.y > 295 && Input.mousePosition.y < 310)
         {
             pressed = true;
             previousX = Input.mousePosition.x;
             previousY = Input.mousePosition.y;
+            Debug.Log('1');
         }
 
         if (Input.GetMouseButtonUp(1))
@@ -35,7 +36,7 @@ public class mouseSpeed : MonoBehaviour {
             currentX = Input.mousePosition.x;
             currentY = Input.mousePosition.y;
 
-            if (hook.transform.position.y > 0.56)
+            if (hook.transform.position.y > 0)
                 hook.transform.Translate(0, -0.01f, 0);
 
             if (Mathf.Abs(currentX - previousX) > dis || Mathf.Abs(currentY - previousY) > dis)
@@ -51,7 +52,7 @@ public class mouseSpeed : MonoBehaviour {
         {
             background.GetComponent<SpriteRenderer>().sprite = off;
 
-            if (hook.transform.position.y < 1.03)
+            if (hook.transform.position.y < 0.74)
                 hook.transform.Translate(0, 0.01f, 0);
         }
     }
