@@ -282,6 +282,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Eraser.cs" />
+    <Compile Include="Assets\mouseSpeed.cs" />
     <Compile Include="Assets\Scripts\DeactivateOnStart.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
@@ -290,6 +292,7 @@
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\Fade.cs" />
     <Compile Include="Assets\Scripts\FadeTrigger.cs" />
+    <Compile Include="Assets\Scripts\HoverText.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\Interactable_Canvas.cs" />
     <Compile Include="Assets\Scripts\Interactable_NoDoor.cs" />
@@ -313,6 +316,7 @@
     <Compile Include="Assets\Scripts\ScalingBackground.cs" />
     <Compile Include="Assets\Scripts\Scene_Trigger.cs" />
     <Compile Include="Assets\Scripts\SpaceCutscne1.cs" />
+    <Compile Include="Assets\ShadowMask.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
