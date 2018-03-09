@@ -24,7 +24,7 @@ public class PHMusic1 : MonoBehaviour {
 	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{
 	// here you can use scene.buildIndex or scene.name to check which scene was loaded
-		if (scene.name == "SpaceStationView"){
+		if (scene.name == "StationEntrance"){
          // Destroy the gameobject this script is attached to
 			Destroy(gameObject);
 			}

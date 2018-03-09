@@ -26,7 +26,7 @@ public class Puzzle : MonoBehaviour {
 			playerCode="";
 			totalDigits = 0;
 			Debug.Log("Correct!");
-			SceneManager.LoadScene("SpaceStationHallA 1");
+			SceneManager.LoadScene("StationElevator2");
 		}
 		else if (totalDigits == 3) {
 			playerCode="";
