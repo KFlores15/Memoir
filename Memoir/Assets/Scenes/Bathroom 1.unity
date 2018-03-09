@@ -686,7 +686,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 1817345461}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  load: 11
+  load: 12
   spawn: {x: 1.6, y: -0.25}
   face_right: 0
   change_sprite: 0

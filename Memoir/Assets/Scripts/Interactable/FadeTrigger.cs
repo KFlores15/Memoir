@@ -10,6 +10,7 @@ public class FadeTrigger : Interactable {
 	void Start() {
 		fade = gameObject.AddComponent<Fade>();
 		player = GameObject.FindGameObjectWithTag("Player");
+		FadeLevel();
 	}
 		
 	public override void Interact() {
