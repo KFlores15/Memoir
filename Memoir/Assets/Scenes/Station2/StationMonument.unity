@@ -291,7 +291,11 @@ MonoBehaviour:
   player: {fileID: 0}
   player_collider: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   load: 11
+=======
+  load: 9
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
 =======
   load: 9
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
@@ -379,7 +383,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
+=======
+  m_RootOrder: 3
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
 =======
   m_RootOrder: 3
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
@@ -466,7 +474,10 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
 --- !u!1001 &1705423471
 Prefab:
   m_ObjectHideFlags: 0
@@ -513,4 +524,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a47cadad1c607ab4aba53470ef1e9bcd, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
+=======
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6

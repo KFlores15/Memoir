@@ -146,7 +146,11 @@ MonoBehaviour:
   player: {fileID: 0}
   player_collider: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   load: 14
+=======
+  load: 10
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
 =======
   load: 10
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
