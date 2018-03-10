@@ -9,6 +9,7 @@ public class castShadow : MonoBehaviour {
     [Range(1, 25)]
     public int shadowLengthModifier = 10; 
     GameObject anchor;
+
     private void Start() {
         anchor = new GameObject("anchor");
         anchor.transform.SetParent(transform.parent);
