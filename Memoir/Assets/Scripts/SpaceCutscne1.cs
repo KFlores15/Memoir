@@ -9,7 +9,7 @@ public class SpaceCutscne1 : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             //Add_Player();
-            SceneManager.LoadScene("SpaceStationHallA");
+            SceneManager.LoadScene("MonsterLab");
         }
     }
 

@@ -9,7 +9,7 @@ public class Monster : MonoBehaviour
     public GameObject player;
     public Vector2 spawn;
     public int load;
-    public bool face_right;
+    public bool face_left;
 
     int timer;
     int bound;
@@ -29,7 +29,11 @@ public class Monster : MonoBehaviour
     void Update()
     {
         //Behaviour(follow);
+<<<<<<< HEAD
+        transform.Translate(Vector2.left * timer / 30 * Time.deltaTime / 2);
+=======
         transform.Translate(Vector2.right * timer / 30 * Time.deltaTime / 2);
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
         timer--;
         if (timer == 0) timer = bound;
     }
@@ -38,7 +42,11 @@ public class Monster : MonoBehaviour
 
     private void Behaviour(bool follow)
     {
+<<<<<<< HEAD
+        transform.Translate(Vector2.left * (4/2) * Time.deltaTime / 2);
+=======
         transform.Translate(Vector2.right * (4/2) * Time.deltaTime / 2);
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
         Debug.Log("Attempting to follow player");
     }
     
@@ -52,7 +60,11 @@ public class Monster : MonoBehaviour
             SceneManager.LoadScene(load);
             player.transform.position = spawn;
 
+<<<<<<< HEAD
+            player.transform.localScale = new Vector3(face_left ? 1 : -1, 1, 1);
+=======
             player.transform.localScale = new Vector3(face_right ? 1 : -1, 1, 1);
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
         }
 	}
 
@@ -64,6 +76,6 @@ public class Monster : MonoBehaviour
         SceneManager.LoadScene(load);
 		player.transform.position = spawn;
 
-        player.transform.localScale = new Vector3(face_right ? 1 : -1 , 1, 1);
+        player.transform.localScale = new Vector3(face_left ? 1 : -1 , 1, 1);
     }
 }
