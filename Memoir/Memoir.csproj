@@ -289,20 +289,11 @@
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Scripts\Door.cs" />
-    <Compile Include="Assets\Scripts\Fade.cs" />
-    <Compile Include="Assets\Scripts\FadeTrigger.cs" />
-    <Compile Include="Assets\Scripts\HoverText.cs" />
-    <Compile Include="Assets\Scripts\Interactable.cs" />
-    <Compile Include="Assets\Scripts\Interactable_Canvas.cs" />
-=======
     <Compile Include="Assets\Scripts\HoverText.cs" />
     <Compile Include="Assets\Scripts\Interactable\Door.cs" />
     <Compile Include="Assets\Scripts\Interactable\Fade.cs" />
     <Compile Include="Assets\Scripts\Interactable\FadeTrigger.cs" />
     <Compile Include="Assets\Scripts\Interactable\Interactable.cs" />
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
     <Compile Include="Assets\Scripts\Interactable_NoDoor.cs" />
     <Compile Include="Assets\Scripts\Inventory\ExampleInventoryInteraction.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
@@ -322,11 +313,8 @@
     <Compile Include="Assets\Scripts\Puzzle.cs" />
     <Compile Include="Assets\Scripts\ScalingBackground.cs" />
     <Compile Include="Assets\Scripts\SpaceCutscne1.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\Scripts\Triggers\Load.cs" />
     <Compile Include="Assets\Scripts\Triggers\Scene_Trigger.cs" />
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
     <Compile Include="Assets\ShadowMask.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -113,8 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &138040293
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +158,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
 --- !u!1 &188244561
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,25 +190,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 188244563}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  load: 10
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
   load: 15
-=======
-  load: 11
->>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
-<<<<<<< HEAD
-=======
-  load: 11
->>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
-=======
->>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
   spawn: {x: -0.85, y: -0.36}
   face_right: 1
   change_sprite: 0
@@ -577,11 +556,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-<<<<<<< HEAD
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-=======
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -592,11 +567,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-<<<<<<< HEAD
-  orthographic size: 1.52
-=======
   orthographic size: 1.521598
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -625,8 +596,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1154004511
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +669,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
 --- !u!1 &1671910906
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,8 +814,6 @@ EdgeCollider2D:
   m_Points:
   - {x: -2, y: 0.8}
   - {x: 2, y: 0.8}
-<<<<<<< HEAD
-=======
 --- !u!1 &1893349310
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,4 +886,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0

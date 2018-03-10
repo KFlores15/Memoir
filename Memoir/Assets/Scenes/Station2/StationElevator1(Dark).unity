@@ -299,11 +299,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-<<<<<<< HEAD
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-=======
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -314,11 +310,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-<<<<<<< HEAD
-  orthographic size: 1.52
-=======
   orthographic size: 1.521598
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -482,25 +474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_IsActive: 1
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
   m_IsActive: 0
-=======
-  m_IsActive: 1
->>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
-<<<<<<< HEAD
-=======
-  m_IsActive: 1
->>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
-=======
->>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
 --- !u!114 &1411008792
 MonoBehaviour:
   m_ObjectHideFlags: 0

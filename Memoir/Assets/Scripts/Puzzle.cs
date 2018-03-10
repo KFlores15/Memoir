@@ -31,11 +31,7 @@ public class Puzzle : MonoBehaviour {
 			playerCode="";
 			totalDigits = 0;
 			Debug.Log("Correct!");
-<<<<<<< HEAD
-			SceneManager.LoadScene("StationElevator2");
-=======
 
->>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
 		}
 		else if (totalDigits == 3) {
 			SoundObject.PlayOneShot(failSound);
