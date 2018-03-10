@@ -951,18 +951,24 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b8a872e4f9ddc3a46b352138bf39d985, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Color: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 0.8901961}
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
   m_Color: {r: 0.8602941, g: 0.8602941, b: 0.8602941, a: 0.8901961}
 =======
   m_Color: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 0.8901961}
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
+<<<<<<< HEAD
 =======
   m_Color: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 0.8901961}
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
 >>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
+=======
+>>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

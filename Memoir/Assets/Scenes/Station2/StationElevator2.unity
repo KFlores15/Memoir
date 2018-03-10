@@ -146,18 +146,24 @@ MonoBehaviour:
   player: {fileID: 0}
   player_collider: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   load: 9
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
   load: 11
 =======
   load: 9
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
+<<<<<<< HEAD
 =======
   load: 9
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
 >>>>>>> 2a419082100d863edbc496ae29f9dca9e01afdd0
+=======
+>>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
   spawn: {x: -1.641, y: -0.121}
   face_right: 1
   change_sprite: 0

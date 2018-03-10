@@ -150,15 +150,15 @@ MonoBehaviour:
   player: {fileID: 0}
   player_collider: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   load: 10
   spawn: {x: 0, y: 0}
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
-  load: 14
 =======
-  load: 10
->>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
+>>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
+  load: 14
 =======
   load: 10
 >>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6

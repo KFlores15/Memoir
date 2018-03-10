@@ -4,4 +4,68 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes: []
+=======
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: eb6bd85458cfea44b8ca7726eea14492
+  - enabled: 1
+    path: Assets/Scenes/Motel Room.unity
+    guid: b05480e3a05854a4fad06678e00bff81
+  - enabled: 1
+    path: Assets/Scenes/Bathroom.unity
+    guid: d6e62ff54043e884bb60de860ff8ca01
+  - enabled: 1
+    path: Assets/Scenes/Sunset.unity
+    guid: da6efa4620a392547b489b0a6a7aaa8b
+  - enabled: 1
+    path: Assets/Scenes/Station2/StationEntrance.unity
+    guid: 7044da7b601b0ca4fb588ed75b2b9059
+  - enabled: 1
+    path: Assets/Scenes/Station2/StationElevator1.unity
+    guid: e694b9bef9a3bcc448011f2648c772f6
+  - enabled: 1
+    path: Assets/Scenes/Testing.unity
+    guid: ba7ed3fd3ed9fad439119b69ac880227
+  - enabled: 1
+    path: Assets/Scenes/Station2/StationElevator2.unity
+    guid: d928161c4d43fcc47bb923cadd197028
+  - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/Station2/Elevator3rd.unity
+    guid: f8a44481695abef45a4113b1716ce22f
+  - enabled: 1
+    path: Assets/Scenes/Station2/3rdFloorLab.unity
+    guid: 666b6e65ce2389a4f975dceb4cfcd549
+  - enabled: 1
+    path: Assets/Scenes/Station2/StationElevator1(Dark).unity
+    guid: fde01ac9ed4730544b6ec56d3d25954a
+  - enabled: 1
+    path: Assets/Scenes/Station2/StationWindow.unity
+    guid: 3b7a418fdc8425f4ba0aea38d7159dba
+  - enabled: 1
+    path: Assets/Scenes/Station2/WomanCutscene.unity
+    guid: 1d221a71b2ce6f44eb1b99549f579e3e
+  - enabled: 1
+    path: Assets/Scenes/Station2/MonsterLab.unity
+    guid: ebba168f1da1b184088a879ab8e7fdbd
+  - enabled: 1
+=======
+    path: Assets/Scenes/Station2/StationElevator1(Dark).unity
+    guid: fde01ac9ed4730544b6ec56d3d25954a
+  - enabled: 1
+    path: Assets/Scenes/Station2/StationWindow.unity
+    guid: 3b7a418fdc8425f4ba0aea38d7159dba
+  - enabled: 1
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
+    path: Assets/Scenes/Station2/StationMonument.unity
+    guid: 234a3f0557245584aad91b3fe53fc7b4
+  - enabled: 1
+    path: Assets/Scenes/Bathroom 1.unity
+    guid: 12d043d9956699443bcbf75d6a497562
+  - enabled: 1
+    path: Assets/Scenes/Motel Room 1.unity
+    guid: e7b74219ccbae98498e1e24a2a4f563f
+>>>>>>> parent of 2a41908... Merge branch 'dev' of https://github.com/KFlores15/Memoir into dev
