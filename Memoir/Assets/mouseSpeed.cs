@@ -18,13 +18,15 @@ public class mouseSpeed : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Debug.Log(Input.mousePosition.x);
+        Debug.Log(Input.mousePosition.y);
+
         if (Input.GetMouseButtonDown(1) && Input.mousePosition.x > 355 && Input.mousePosition.x < 375
             && Input.mousePosition.y > 295 && Input.mousePosition.y < 310)
         {
             pressed = true;
             previousX = Input.mousePosition.x;
             previousY = Input.mousePosition.y;
-            Debug.Log('1');
         }
 
         if (Input.GetMouseButtonUp(1))
