@@ -9,13 +9,16 @@ public class Eraser : MonoBehaviour {
     private Sprite sprite;
     private Rect rect;
     private Color[] colors, texture_colors;
+    private bool marble;
 
-    public Texture2D target;
+    public Texture2D target, done;
     public float range;
+    public int marbleX, marbleY, marbleWidth, marbleLength;
 
     // Use this for initialization
     void Start () {
         range = 20f;
+        marble = false;
 
         colors = GetComponent<SpriteRenderer>().sprite.texture.GetPixels(0);
         rect = GetComponent<SpriteRenderer>().sprite.rect;
@@ -33,8 +36,35 @@ public class Eraser : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (!marble)
+        {
+            Color[] pix = texture.GetPixels(marbleX, 55, 25, 20);
+            Color[] pix_ = target.GetPixels(marbleX, 55, 25, 20);
+            float count = 0;
+            for (int i = 0; i < pix.Length; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                    count += pix[i][j] - pix_[i][j];
+            }
+            if (count == 0)
+            {
+                texture.Apply();
+                marble = true;
+                //Click Dialog to remove marble
+                GameObject.Find("Inventory Manager").GetComponent<InventoryManager>().addItem("marble", 1);
+                //This for loop is for removing the marble
+                for (int i = marbleX; i < marbleX + marbleWidth; i++)
+                {
+                    for (int j = marbleY; j < marbleY + marbleLength; j++)
+                    {
+                        Color temp = done.GetPixel(i, j);
+                        texture.SetPixel(i, j, temp);
+                    }
+                }
+            }
+        }
 
-        if (!Input.GetMouseButton(0))
+        if (!Input.GetMouseButton(0) || marble)
             return;
 
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
@@ -43,8 +73,6 @@ public class Eraser : MonoBehaviour {
 
         int mouseX = (int)((hit.point.x + 2) / 4 * texture.width);
         int mouseY = (int)((hit.point.y + 1.115) / 2.23 * texture.height);
-
-        Debug.Log(hit.collider.bounds);
 
         for (int i = (int)(-range); i < range; i++)
         {

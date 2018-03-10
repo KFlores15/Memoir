@@ -19,6 +19,7 @@ public class mouseSpeed : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         if (Input.GetMouseButtonDown(1) && Input.mousePosition.x > x1 && Input.mousePosition.x < x2
             && Input.mousePosition.y > y1 && Input.mousePosition.y < y2)
         {
@@ -45,6 +46,20 @@ public class mouseSpeed : MonoBehaviour {
             {
                 previousX = currentX;
                 previousY = currentY;
+            }
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                //RaycastHit hit = Physics.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit, 100.0f))
+                {
+                    Debug.Log("You selected the " + hit.transform.name);
+                    Destroy(hit.collider.gameObject);
+                    Item password = new Item("Password Paper", "password", 1, "This is a password for elevator");
+                    GameObject.Find("Inventory Manager").GetComponent<InventoryManager>().addItem(password);
+                }
             }
 
         }
