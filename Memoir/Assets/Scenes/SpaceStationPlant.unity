@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eedd9904232c2548a8a575e20e41678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2800000, guid: a63109c0ad2cd7541b8b2abfb5da9239, type: 3}
+  target: {fileID: 2800000, guid: cc99b6540e02bf343bcbdbe94212c271, type: 3}
   range: 0
 --- !u!212 &1892180064
 SpriteRenderer:
