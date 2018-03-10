@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour {
 	//used for attaching the objects in the hierarchy
@@ -64,5 +65,9 @@ public class DialogueManager : MonoBehaviour {
 	//basically just tells the animator to play the closing animation
 	void EndDialogue() {
 		anim.SetBool("isOpen", false);
+		if(SceneManager.GetActiveScene().buildIndex == 3) {
+			//GameObject.Find("sunset_scene_trigger").GetComponent<Fade>().enabled = true;
+			SceneManager.LoadScene(0);
+		}
 	}
 }

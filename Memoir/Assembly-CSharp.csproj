@@ -54,16 +54,15 @@
      <Compile Include="Assets\Eraser.cs" />
      <Compile Include="Assets\mouseSpeed.cs" />
      <Compile Include="Assets\Scripts\DeactivateOnStart.cs" />
-     <Compile Include="Assets\Scripts\Dialogue.cs" />
-     <Compile Include="Assets\Scripts\DialogueManager.cs" />
-     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
-     <Compile Include="Assets\Scripts\Door.cs" />
-     <Compile Include="Assets\Scripts\Fade.cs" />
-     <Compile Include="Assets\Scripts\FadeTrigger.cs" />
      <Compile Include="Assets\Scripts\HoverText.cs" />
-     <Compile Include="Assets\Scripts\Interactable.cs" />
-     <Compile Include="Assets\Scripts\Interactable_Canvas.cs" />
+     <Compile Include="Assets\Scripts\Interactable\Door.cs" />
+     <Compile Include="Assets\Scripts\Interactable\Fade.cs" />
+     <Compile Include="Assets\Scripts\Interactable\FadeTrigger.cs" />
+     <Compile Include="Assets\Scripts\Interactable\Interactable.cs" />
      <Compile Include="Assets\Scripts\Interactable_NoDoor.cs" />
      <Compile Include="Assets\Scripts\Inventory\ExampleInventoryInteraction.cs" />
      <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
@@ -71,7 +70,6 @@
      <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
      <Compile Include="Assets\Scripts\Inventory\Item.cs" />
      <Compile Include="Assets\Scripts\Inventory\ItemManager.cs" />
-     <Compile Include="Assets\Scripts\Load.cs" />
      <Compile Include="Assets\Scripts\Monster.cs" />
      <Compile Include="Assets\Scripts\Music\PHMusic1.cs" />
      <Compile Include="Assets\Scripts\Music\PHMusic2.cs" />
@@ -83,8 +81,9 @@
      <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
      <Compile Include="Assets\Scripts\Puzzle.cs" />
      <Compile Include="Assets\Scripts\ScalingBackground.cs" />
-     <Compile Include="Assets\Scripts\Scene_Trigger.cs" />
      <Compile Include="Assets\Scripts\SpaceCutscne1.cs" />
+     <Compile Include="Assets\Scripts\Triggers\Load.cs" />
+     <Compile Include="Assets\Scripts\Triggers\Scene_Trigger.cs" />
      <Compile Include="Assets\ShadowMask.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

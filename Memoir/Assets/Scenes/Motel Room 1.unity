@@ -1013,6 +1013,8 @@ GameObject:
   - component: {fileID: 1013250034}
   - component: {fileID: 1013250033}
   - component: {fileID: 1013250032}
+  - component: {fileID: 1013250037}
+  - component: {fileID: 1013250036}
   m_Layer: 0
   m_Name: doorToExit
   m_TagString: Untagged
@@ -1120,6 +1122,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1013250036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013250031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e960fdbc16f424b844850820033d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade_speed: 0.3
+--- !u!114 &1013250037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013250031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17ab37f5c7c705498945a68814f081e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 0}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  fade: {fileID: 0}
 --- !u!1 &1061361851
 GameObject:
   m_ObjectHideFlags: 0

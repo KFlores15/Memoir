@@ -988,6 +988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1336132961}
   dialogueText: {fileID: 391219765}
+  fade: {fileID: 0}
   anim: {fileID: 1628977125}
 --- !u!4 &869217037
 Transform:
@@ -1019,7 +1020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1013250032
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1205,6 +1206,7 @@ GameObject:
   - component: {fileID: 1065391056}
   - component: {fileID: 1065391059}
   - component: {fileID: 1065391060}
+  - component: {fileID: 1065391061}
   m_Layer: 0
   m_Name: doorToBathroom
   m_TagString: Untagged
@@ -1327,6 +1329,18 @@ MonoBehaviour:
   player: {fileID: 0}
   player_collider: {fileID: 0}
   fade: {fileID: 0}
+--- !u!114 &1065391061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065391055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e960fdbc16f424b844850820033d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade_speed: 0.3
 --- !u!1 &1230173302
 GameObject:
   m_ObjectHideFlags: 0

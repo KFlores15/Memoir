@@ -580,6 +580,8 @@ GameObject:
   - component: {fileID: 1817345462}
   - component: {fileID: 1817345461}
   - component: {fileID: 1817345464}
+  - component: {fileID: 1817345466}
+  - component: {fileID: 1817345465}
   m_Layer: 0
   m_Name: spr_motel_bathroom_door_0
   m_TagString: Untagged
@@ -686,10 +688,45 @@ MonoBehaviour:
   interactable_collider: {fileID: 1817345461}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  load: 11
+<<<<<<< HEAD
+<<<<<<< HEAD
+  load: 16
+=======
+  load: 12
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
+=======
+  load: 12
+>>>>>>> 2d66fddedf4291e3bf0202a1cb8bc84f6ffa2be6
   spawn: {x: 1.6, y: -0.25}
   face_right: 0
   change_sprite: 0
+--- !u!114 &1817345465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817345460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e960fdbc16f424b844850820033d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade_speed: 0.3
+--- !u!114 &1817345466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817345460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17ab37f5c7c705498945a68814f081e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 0}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  fade: {fileID: 0}
 --- !u!1 &1994765333
 GameObject:
   m_ObjectHideFlags: 0

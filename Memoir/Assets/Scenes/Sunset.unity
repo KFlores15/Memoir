@@ -406,6 +406,7 @@ GameObject:
   - component: {fileID: 638844521}
   - component: {fileID: 638844520}
   - component: {fileID: 638844523}
+  - component: {fileID: 638844524}
   m_Layer: 0
   m_Name: sunset_scene_trigger
   m_TagString: Untagged
@@ -497,6 +498,18 @@ MonoBehaviour:
     - 'Mom: But sometimes you have to remember that dreams are fantasies.'
     - 'Mom: They''re not really real and they''ll never be real.'
     - 'You: Perhaps.....'
+--- !u!114 &638844524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 638844519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e960fdbc16f424b844850820033d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade_speed: 0.3
 --- !u!1 &788121322
 GameObject:
   m_ObjectHideFlags: 0
