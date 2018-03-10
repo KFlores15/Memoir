@@ -2,12 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Puzzle.cs">
     <Files>
-      <File FileName="Assets\Scripts\PH.cs" Line="17" Column="10" />
-      <File FileName="Assets\Scripts\PH_NoDoor.cs" Line="7" Column="45" />
-      <File FileName="Assets\Scripts\Interactable.cs" Line="6" Column="45" />
-      <File FileName="Assets\Scripts\Interactable_NoDoor.cs" Line="24" Column="25" />
-      <File FileName="Assets\Scripts\Load.cs" Line="4" Column="1" />
-      <File FileName="Assets\Scripts\Puzzle.cs" Line="23" Column="3" />
+      <File FileName="Assets\Scripts\Puzzle.cs" Line="52" Column="72" />
+      <File FileName="Assets\Scripts\Triggers\Scene_Trigger.cs" Line="27" Column="80" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
