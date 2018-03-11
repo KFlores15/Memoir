@@ -23,7 +23,6 @@ public class InventorySlot : MonoBehaviour {
         nameText = nameObject.GetComponent<Text>();
         numberText = numberObject.GetComponent<Text>();
         descriptionText = DescriptionObjectText.GetComponent<Text>();
-        print("I'm awake!!");
     }
     
     public void UpdateSlot(Item newItem){
@@ -40,7 +39,6 @@ public class InventorySlot : MonoBehaviour {
             image.sprite = sprite;
         }
         print(item.name);
-        print(nameObject);
         nameText.text = item.name;
         numberText.text = item.number.ToString();
         descriptionText.text = item.description;

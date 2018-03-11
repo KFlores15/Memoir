@@ -1,41 +1,51 @@
-﻿/*using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class Door : Interactable {
-    public int load;
+public class Door : Interactable
+{
+    public string load;
     public Vector2 spawn;
     public bool face_right;
     public bool change_sprite;
-
+    public bool unlocked = true;
     public bool player_exists_in_next_room;
-    public GameObject player;
     private Fade fade;
+    private string locked_name;
+    private string temp;
 
-    void Start()
+    void Awake()
     {
         fade = gameObject.AddComponent<Fade>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        locked_name = this.name_of_object + "(Locked)";
+        temp = this.name_of_object;
     }
 
     public override void Interact()
     {
-        if (player_exists_in_next_room)
+        if (unlocked)
         {
-            SceneManager.LoadSceneAsync(load);
+            this.name_of_object = temp;
+            if (player_exists_in_next_room)
+            {
+                SceneManager.LoadScene(load);
+            }
+            else
+            {
+                StartCoroutine(FadeLevel());
+            }
         }
-        else
+
+        if (!unlocked)
         {
-            StartCoroutine(FadeLevel());
+            this.name_of_object = locked_name;
         }
     }
 
     IEnumerator FadeLevel()
     {
-        Debug.Log("Attempting to fade level");
-        float fade_time = fade.BeginFade(1);
+        float fade_time = fade.BeginFade(3);
         Debug.Log(fade_time);
         player.GetComponent<PlayerMovementController>().enabled = false;
 
@@ -52,4 +62,3 @@ public class Door : Interactable {
         player.transform.localScale = new Vector3(face_right ? 1 : -1, 1, 1);
     }
 }
-*/

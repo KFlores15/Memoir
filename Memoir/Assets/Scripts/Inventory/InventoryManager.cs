@@ -49,13 +49,11 @@ public class InventoryManager : MonoBehaviour {
     }
 
     public void addItem( Item item){
-        inventoryToggledPannel.SetActive(true);
         inv.addItem(item);
         int index = inv.findItemIndex(item.id);
         if(index >= inventoryArray.Count) inventoryArray.Add(InstantiateSlot(index));
         
         if(index != -1) updateSlot(index);
-        inventoryToggledPannel.SetActive(false);
     }
     public void addItem( string id, int number){
         Item item = new Item(id, number);

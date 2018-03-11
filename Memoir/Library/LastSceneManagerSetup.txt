@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Old Station/SpaceStationEntrance.unity
+- path: Assets/Scenes/Station2/StationEntrance.unity
   isLoaded: 1
   isActive: 1
