@@ -17,7 +17,6 @@ public class Load : MonoBehaviour
 	IEnumerator waitForLoad() {
 		yield return new WaitForSecondsRealtime(0.5f);
 		SceneManager.LoadScene("Motel Room");
-		//yield return new WaitForSecondsRealtime(1);
 		Add_Player();
 	}
 

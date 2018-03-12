@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 324016427}
   - component: {fileID: 324016426}
   - component: {fileID: 324016425}
+  - component: {fileID: 324016429}
   m_Layer: 0
   m_Name: Door1
   m_TagString: Untagged
@@ -253,7 +254,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 324016424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -347,6 +348,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324016429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324016424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 324016426}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Elevator
+  instruction: 
+  isDoor: 1
+  load: 8
+  spawn: {x: 1.48, y: -0.121}
+  face_right: 0
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &409125092
 GameObject:
   m_ObjectHideFlags: 0

@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 455752724}
   - component: {fileID: 455752723}
   - component: {fileID: 455752722}
+  - component: {fileID: 455752726}
   m_Layer: 0
   m_Name: Door2
   m_TagString: Untagged
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 455752721}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -231,6 +232,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &455752726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455752721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 455752723}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Monument
+  instruction: 
+  isDoor: 1
+  load: 14
+  spawn: {x: -1.741, y: -0.121}
+  face_right: 1
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &1101078392
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +266,7 @@ GameObject:
   - component: {fileID: 1101078394}
   - component: {fileID: 1101078393}
   - component: {fileID: 1101078396}
+  - component: {fileID: 1101078397}
   m_Layer: 0
   m_Name: Door1
   m_TagString: Untagged
@@ -337,7 +362,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1101078392}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -349,6 +374,29 @@ MonoBehaviour:
   spawn: {x: 1.632, y: -0.121}
   face_right: 0
   change_sprite: 0
+--- !u!114 &1101078397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1101078392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 1101078393}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Elevator
+  instruction: 
+  isDoor: 1
+  load: 7
+  spawn: {x: 1.632, y: -0.121}
+  face_right: 0
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &1482855960
 GameObject:
   m_ObjectHideFlags: 0

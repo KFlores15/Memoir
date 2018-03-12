@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Puzzle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Inventory\InventoryManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Puzzle.cs" Line="52" Column="72" />
-      <File FileName="Assets\Scripts\Triggers\Scene_Trigger.cs" Line="27" Column="80" />
+      <File FileName="Assets\Scripts\Interactable\Interactable.cs" Line="29" Column="26" />
+      <File FileName="Assets\Scripts\Interactable\Door.cs" Line="12" Column="33" />
+      <File FileName="Assets\Scripts\Interactable\Panel.cs" Line="19" Column="24" />
+      <File FileName="Assets\Scripts\Inventory\InventoryManager.cs" Line="37" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

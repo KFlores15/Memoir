@@ -130,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &257220796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +582,7 @@ GameObject:
   - component: {fileID: 1817345464}
   - component: {fileID: 1817345466}
   - component: {fileID: 1817345465}
+  - component: {fileID: 1817345467}
   m_Layer: 0
   m_Name: spr_motel_bathroom_door_0
   m_TagString: Untagged
@@ -668,7 +669,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817345460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.158, y: -0.344, z: 0}
+  m_LocalPosition: {x: -1.155, y: -0.354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -680,7 +681,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817345460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fc451863df355d42b05a807c6338ed3, type: 3}
   m_Name: 
@@ -688,6 +689,9 @@ MonoBehaviour:
   interactable_collider: {fileID: 1817345461}
   player: {fileID: 0}
   player_collider: {fileID: 0}
+  name_of_object: 
+  instruction: 
+  isDoor: 0
   load: 16
   spawn: {x: 1.6, y: -0.25}
   face_right: 0
@@ -698,7 +702,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817345460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61e960fdbc16f424b844850820033d6c, type: 3}
   m_Name: 
@@ -710,7 +714,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817345460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d17ab37f5c7c705498945a68814f081e, type: 3}
   m_Name: 
@@ -718,7 +722,33 @@ MonoBehaviour:
   interactable_collider: {fileID: 0}
   player: {fileID: 0}
   player_collider: {fileID: 0}
+  name_of_object: 
+  instruction: 
+  isDoor: 0
   fade: {fileID: 0}
+--- !u!114 &1817345467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817345460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 1817345461}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Bedroom
+  instruction: 
+  isDoor: 1
+  load: 16
+  spawn: {x: 1.6, y: -0.25}
+  face_right: 0
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &1994765333
 GameObject:
   m_ObjectHideFlags: 0

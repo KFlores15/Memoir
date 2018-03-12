@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Door : Interactable
 {
-    public string load;
+    public int load;
     public Vector2 spawn;
     public bool face_right;
     public bool change_sprite;
@@ -30,6 +30,14 @@ public class Door : Interactable
             if (player_exists_in_next_room)
             {
                 SceneManager.LoadScene(load);
+				//SceneManager.LoadSceneAsync(load);
+				if (change_sprite)
+				{
+					SpriteRenderer renderer = player.GetComponent<SpriteRenderer>();
+					renderer.color = (renderer.color == Color.white ? Color.black : Color.white);
+				}
+				player.transform.position = spawn;
+				player.transform.localScale = new Vector3(face_right ? 1 : -1, 1, 1);
             }
             else
             {
@@ -52,13 +60,5 @@ public class Door : Interactable
         yield return new WaitForSeconds(fade_time);
 
         player.GetComponent<PlayerMovementController>().enabled = true;
-        SceneManager.LoadSceneAsync(load);
-        if (change_sprite)
-        {
-            SpriteRenderer renderer = player.GetComponent<SpriteRenderer>();
-            renderer.color = (renderer.color == Color.white ? Color.black : Color.white);
-        }
-        player.transform.position = spawn;
-        player.transform.localScale = new Vector3(face_right ? 1 : -1, 1, 1);
     }
 }

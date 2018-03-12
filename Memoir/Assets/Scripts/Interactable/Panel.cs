@@ -108,10 +108,15 @@ public class Panel : Interactable {
         // During Puzzle disable player movement to stop them from going to unintended places.
         if (puzzle_canvas.enabled)
         {
-            player.GetComponent<PlayerMovementController>().walkSpeed = 0;
-        } else
+			player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+			GetComponent<Animator>().SetBool("isWalking", false);
+			GetComponent<Animator>().SetBool("isRunning", false);
+			player.GetComponent<PlayerMovementController>().enabled = false;
+        } 
+		else
         {
-            player.GetComponent<PlayerMovementController>().walkSpeed = 1;
+			player.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+			player.GetComponent<PlayerMovementController>().enabled = true;
         }
     }
 
@@ -169,7 +174,9 @@ public class Panel : Interactable {
 
     void Exit()
     {
-        puzzle_canvas.enabled = false;
-        exited = true;
+		puzzle_canvas.enabled = false;
+		if(door.unlocked){
+        	exited = true;
+		}
     }
 }

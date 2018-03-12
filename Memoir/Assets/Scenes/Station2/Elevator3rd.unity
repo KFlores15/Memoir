@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 1094860353}
   - component: {fileID: 1094860352}
   - component: {fileID: 1094860351}
+  - component: {fileID: 1094860355}
   m_Layer: 0
   m_Name: Elevator3Lift
   m_TagString: Untagged
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1094860350}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -231,6 +232,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094860355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1094860350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 1094860352}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: First Floor
+  instruction: 
+  isDoor: 1
+  load: 10
+  spawn: {x: -0.82, y: -0.121}
+  face_right: 1
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &1303878853
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +347,7 @@ GameObject:
   - component: {fileID: 1892253246}
   - component: {fileID: 1892253245}
   - component: {fileID: 1892253244}
+  - component: {fileID: 1892253248}
   m_Layer: 0
   m_Name: Door2
   m_TagString: Untagged
@@ -336,7 +361,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1892253243}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -430,6 +455,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1892253248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1892253243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 1892253245}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Bio Lab
+  instruction: 
+  isDoor: 1
+  load: 9
+  spawn: {x: -1.35, y: -0.121}
+  face_right: 1
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &2024894493
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,8 +530,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 0.9}
-  - {x: -2, y: -0.7}
+  - {x: -1.5488963, y: 0.845193}
+  - {x: -1.5446805, y: -0.6620567}
 --- !u!68 &2024894496
 EdgeCollider2D:
   m_ObjectHideFlags: 0

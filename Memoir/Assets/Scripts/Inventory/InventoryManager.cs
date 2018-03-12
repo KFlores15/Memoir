@@ -34,7 +34,7 @@ public class InventoryManager : MonoBehaviour {
 
     public void Update() {
         //open or close menu
-        if(Input.GetKeyDown(KeyCode.Escape)){
+        if(Input.GetKeyDown(KeyCode.Tab)){
             inventoryToggledPannel.SetActive(!inventoryToggledPannel.activeInHierarchy);
         }
     }

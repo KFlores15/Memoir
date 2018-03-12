@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 395121650}
   - component: {fileID: 395121649}
   - component: {fileID: 395121648}
+  - component: {fileID: 395121652}
   m_Layer: 0
   m_Name: DoortoWindow
   m_TagString: Untagged
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 395121647}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -231,6 +232,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395121652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 395121647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 395121649}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Lobby
+  instruction: 
+  isDoor: 1
+  load: 11
+  spawn: {x: -1.641, y: -0.121}
+  face_right: 1
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &1129811970
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +266,7 @@ GameObject:
   - component: {fileID: 1129811973}
   - component: {fileID: 1129811972}
   - component: {fileID: 1129811971}
+  - component: {fileID: 1129811975}
   m_Layer: 0
   m_Name: Elevator2Lift
   m_TagString: Untagged
@@ -255,7 +280,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1129811970}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -349,6 +374,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129811975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129811970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 1129811972}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Third Floor
+  instruction: 
+  isDoor: 1
+  load: 8
+  spawn: {x: -0.82, y: -0.121}
+  face_right: 1
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &1778986933
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,6 +489,8 @@ GameObject:
   - component: {fileID: 2102154642}
   - component: {fileID: 2102154644}
   - component: {fileID: 2102154641}
+  - component: {fileID: 2102154646}
+  - component: {fileID: 2102154645}
   m_Layer: 0
   m_Name: StationElevator2Background
   m_TagString: Untagged
@@ -539,3 +589,37 @@ EdgeCollider2D:
   m_Points:
   - {x: -2, y: 0}
   - {x: 2, y: 0}
+--- !u!68 &2102154645
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102154640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.5439165, y: 0.801878}
+  - {x: -1.543252, y: -0.6200756}
+--- !u!68 &2102154646
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102154640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.9992748, y: 0.79722786}
+  - {x: 2.001384, y: -0.60372585}

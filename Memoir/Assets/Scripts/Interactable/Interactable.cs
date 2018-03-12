@@ -7,9 +7,9 @@ public class Interactable : MonoBehaviour
     public Collider2D interactable_collider;
     public GameObject player;
     public Collider2D player_collider;
-    public float space_ratio = 1;
     public string name_of_object;
     public string instruction;
+	public bool isDoor;
 
     private Rect interactable_overhead;
     private Rect under_overhead;
@@ -34,7 +34,7 @@ public class Interactable : MonoBehaviour
         if (interactable_collider != null)
         {
             over_interactable = new Vector3(interactable_collider.transform.position.x, interactable_collider.transform.position.y + interactable_collider.bounds.size.y / 2, interactable_collider.transform.position.z);
-            under_interactable = new Vector3(interactable_collider.transform.position.x, interactable_collider.transform.position.y + interactable_collider.bounds.size.y / 4 * space_ratio, interactable_collider.transform.position.z);
+			under_interactable = new Vector3(interactable_collider.transform.position.x, (interactable_collider.transform.position.y + interactable_collider.bounds.size.y / 2) - 0.08f, interactable_collider.transform.position.z);
         }
         Vector3 new_center = Camera.main.WorldToScreenPoint(over_interactable);
         Vector3 under_center = Camera.main.WorldToScreenPoint(under_interactable);
@@ -43,6 +43,11 @@ public class Interactable : MonoBehaviour
         under_center.y = Screen.height - under_center.y;
         interactable_overhead.center = new_center;
         under_overhead.center = under_center;
+
+		//Instruction
+		if(isDoor) {
+			instruction = "(E)";
+		}
     }
     void Update()
     {
@@ -65,7 +70,7 @@ public class Interactable : MonoBehaviour
             GUI.Label(under_overhead, instruction, label_style);
         }
     }
-
+		
     void OnMouseDown()
     {
         if (player_collider.IsTouching(interactable_collider))
@@ -73,6 +78,6 @@ public class Interactable : MonoBehaviour
             Interact();
         }
     }
-
+    
     public virtual void Interact() { }
 }

@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 226427455}
   - component: {fileID: 226427454}
   - component: {fileID: 226427452}
+  - component: {fileID: 226427453}
   m_Layer: 0
   m_Name: HallwayDoor
   m_TagString: Untagged
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 226427451}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -149,6 +150,29 @@ MonoBehaviour:
   spawn: {x: -0.841, y: -0.121}
   face_right: 1
   change_sprite: 0
+--- !u!114 &226427453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 226427451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 226427454}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Keypad
+  instruction: 
+  isDoor: 1
+  load: 6
+  spawn: {x: -0.841, y: -0.121}
+  face_right: 1
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!61 &226427454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -242,6 +266,7 @@ GameObject:
   - component: {fileID: 478061599}
   - component: {fileID: 478061598}
   - component: {fileID: 478061597}
+  - component: {fileID: 478061601}
   m_Layer: 0
   m_Name: HallwaytoEntrance
   m_TagString: Untagged
@@ -255,7 +280,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 478061596}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edf42e29e040c454aadddbfc67ec3d0c, type: 3}
   m_Name: 
@@ -349,6 +374,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478061601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478061596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff1df8b11fad346b1248b29dd13ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable_collider: {fileID: 478061598}
+  player: {fileID: 0}
+  player_collider: {fileID: 0}
+  name_of_object: Station Entrance
+  instruction: 
+  isDoor: 1
+  load: 4
+  spawn: {x: -1.565, y: -0.137}
+  face_right: 1
+  change_sprite: 0
+  unlocked: 1
+  player_exists_in_next_room: 1
 --- !u!1 &1448419669
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,8 +506,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2, y: 1.12}
-  - {x: -2, y: -1.12}
+  - {x: -1.5466397, y: 0.83843946}
+  - {x: -1.5466397, y: -0.6380062}
 --- !u!68 &1448419674
 EdgeCollider2D:
   m_ObjectHideFlags: 0

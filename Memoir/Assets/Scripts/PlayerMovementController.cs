@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour {
 
-	public float walkSpeed = 1;
-	public float runSpeed = 2;
+	public float walkSpeed;
+	public float runSpeed;
 	Animator anim;
     GameObject player;
     Rigidbody2D rb;
+
 	// Use this for initialization
 	void Start () {
+		walkSpeed = 0.6f;
+		runSpeed = 1.8f;
 		anim = GetComponent<Animator>();
         player = this.gameObject;
         rb = GetComponent<Rigidbody2D>();
-
         GameObject.DontDestroyOnLoad(player);
     }
-	
+		
 	// FixedUpdate is recommended for animation
 	void FixedUpdate () {
 		//get horizontal input (A or D on keyboard) and multiply by a set walk speed defined above
@@ -27,10 +29,6 @@ public class PlayerMovementController : MonoBehaviour {
 		else {
 			rb.velocity = new Vector2(Input.GetAxis("Horizontal") * runSpeed, 0);
 		}
-		/*****************************OLD***************************/
-			//set the animation parameter defined as "hSpeed" to the velocity which will transition the sprite mode from "Idle" to "WriterWalking"
-			//anim.SetFloat("hSpeed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
-		/**********************************************************/
 		//check if character is moving and tell animator to change state
 		if(rb.velocity.x != 0 && Input.GetKey(KeyCode.LeftShift) == false) {
 			anim.SetBool("isWalking", true);
