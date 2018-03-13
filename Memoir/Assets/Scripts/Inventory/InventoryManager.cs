@@ -17,9 +17,18 @@ public class InventoryManager : MonoBehaviour {
     public GameObject inventoryContentPanel;       //must be a canvas or inside of one
     List<GameObject> inventoryArray;
 
+    InventoryDictionary invDict;
+    public string defaultInventoryName = "default";
+
+    private int maxNumItem = 1000;
+
+    public string activeItem = "";
+    public GameObject mouseSlot; 
+
     // Use this for initialization
     void Awake () {
-        inv = new Inventory();
+        invDict = new InventoryDictionary(defaultInventoryName);
+        inv = invDict.getInventory();
         inventoryArray = new List<GameObject>();
 
         for(int i=0; i< inv.Count(); i++){
@@ -43,6 +52,11 @@ public class InventoryManager : MonoBehaviour {
             }
         }
     }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Inventory Panel Operations
+// Mainly handles keeping front end inventory display (inventory slots) up to date with the underlying backend
+//
 
     GameObject InstantiateSlot(int index){
         if(inventoryToggledPannel.activeInHierarchy){
@@ -93,6 +107,12 @@ public class InventoryManager : MonoBehaviour {
         }
     }
 
+    public void clearInventory(){
+        for( int i = inventoryArray.Count - 1; i>=0; i-- ){
+            removeItem(inv.getID(i), maxNumItem);
+        }
+    }
+
     public void swapItems(string idA, string idB){
         if(idA == idB) return; //same item, no need to swap, so stop
 
@@ -139,7 +159,13 @@ public class InventoryManager : MonoBehaviour {
         if(index >= inventoryArray.Count){
             //create it if it doesn't yet exist:
             slotObject = InstantiateSlot(index);
-        }else{
+       }else if(index >= inv.Count()){
+            //destroy the slot if there is no contents
+            slotObject = inventoryArray[index];
+            Destroy(slotObject);
+            inventoryArray.Remove(slotObject);
+            return true;
+        }else{ //otherwise just grab it
             slotObject = inventoryArray[index];
         }
 
@@ -153,9 +179,37 @@ public class InventoryManager : MonoBehaviour {
     }
 
     void updateAllSlots(){
-        for(int i = 0; i< inv.Count(); i++){
+        for(int i = 0; i< Mathf.Max(inv.Count(), inventoryArray.Count); i++){ 
             updateSlot(i);
         }
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Inventory Dictionary Operations
+// This allows multiple inventories to be kept and saved all in one place
+// Only one is ever active at a given time
+
+    public string getNameOfActiveInv(){
+        return invDict.getNameOfActive();
+    }
+
+    public bool addInventory(string newName){
+        return invDict.addInventory(newName);
+    }
+
+    public bool changeInventories(string otherInvName){
+        Inventory newInv = invDict.changeActiveInv(otherInvName);
+        if(newInv != null){
+            inv = newInv;
+            updateAllSlots();
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public bool removeInventory(string nameToRemove){
+        return invDict.removeInventory(nameToRemove);
     }
 
 }

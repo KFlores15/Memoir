@@ -38,7 +38,7 @@ public class InventorySlot : MonoBehaviour {
         if(sprite != null){
             image.sprite = sprite;
         }
-        print(item.name);
+
         nameText.text = item.name;
         numberText.text = item.number.ToString();
         descriptionText.text = item.description;

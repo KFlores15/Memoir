@@ -22,5 +22,23 @@ public class ExampleInventoryInteraction : MonoBehaviour {
         im.swapItems("papers", "wand");
         //end of test and demonstration section
 	}
+    void Update() {
+        if(Input.GetKeyDown(KeyCode.Delete)){
+            InventoryManager im = GameObject.Find("Inventory Manager").GetComponent<InventoryManager>();
+            im.addInventory("test");
+            im.changeInventories("test");
+            im.addItem("bat", 7);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space)){
+            InventoryManager im = GameObject.Find("Inventory Manager").GetComponent<InventoryManager>();
+            if(im.getNameOfActiveInv() == "default"){
+                im.changeInventories("test");
+            }else{
+                im.changeInventories("default");
+            }
+        }
+    }
+
 
 }
