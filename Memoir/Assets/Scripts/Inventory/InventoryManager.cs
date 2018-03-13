@@ -51,6 +51,9 @@ public class InventoryManager : MonoBehaviour {
                 updateAllSlots();
             }
         }
+        if(Input.GetMouseButtonDown(0)){
+            onActiveItemUse();
+        }
     }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -64,7 +67,7 @@ public class InventoryManager : MonoBehaviour {
             inventoryArray.Add(invSlot);
             InventorySlot slot = invSlot.GetComponent<InventorySlot>();
             slot.ResourcesItemPath = ResourcesItemPath;
-            slot.displayPanel = inventoryContentPanel;
+            slot.im = this;
             slot.UpdateSlot(inv.getItem(index));
             return invSlot;
         }
@@ -211,6 +214,46 @@ public class InventoryManager : MonoBehaviour {
     public bool removeInventory(string nameToRemove){
         return invDict.removeInventory(nameToRemove);
     }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Interactable Objects:
+//
+
+    public void setActiveItem(string id){
+        if(activeItem != id && id!=""){
+            activeItem = id;
+            mouseSlot.GetComponent<MouseSlot>().UpdateSlot(inv.getItem(id));
+            inventoryToggledPannel.SetActive(false);
+        }else{
+            activeItem = "";
+            mouseSlot.GetComponent<MouseSlot>().clearSlot();
+        }
+    }
+
+    UseItem checkItemUse(RaycastHit2D hit){
+        if( activeItem   == "" ||  
+            hit.collider == null) return null;
+
+        UseItem obj= hit.collider.gameObject.GetComponent<UseItem>();
+
+        if(obj == null) return null;
+        else return obj;
+    }
+
+    void onActiveItemUse(){
+
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+        UseItem obj = checkItemUse(hit);
+        if(obj != null){
+            List<Item> itemBack = obj.useItem(inv.getItem(activeItem));
+
+            foreach(Item item in itemBack){
+                addItem(item);
+            }
+            setActiveItem("");
+        }
+    } 
 
 }
         
