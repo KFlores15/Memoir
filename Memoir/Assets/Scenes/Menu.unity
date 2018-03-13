@@ -1296,10 +1296,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1559732342}
   - component: {fileID: 1559732341}
-  - component: {fileID: 1559732340}
   - component: {fileID: 1559732343}
   - component: {fileID: 1559732345}
   - component: {fileID: 1559732344}
+  - component: {fileID: 1559732340}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -1315,10 +1315,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1559732339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fdcfe0525c4df469c8f61ff6ed1bbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 33b464bf9ca5d7e4683b4fd679e86fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expectedItems: []
 --- !u!212 &1559732341
 SpriteRenderer:
   m_ObjectHideFlags: 0
