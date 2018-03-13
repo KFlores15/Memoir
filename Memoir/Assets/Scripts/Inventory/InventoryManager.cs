@@ -36,22 +36,33 @@ public class InventoryManager : MonoBehaviour {
         //open or close menu
         if(Input.GetKeyDown(KeyCode.Tab)){
             inventoryToggledPannel.SetActive(!inventoryToggledPannel.activeInHierarchy);
+            
+            //update Inventory Slots on open of Inventory Panel
+            if(inventoryToggledPannel.activeInHierarchy){
+                updateAllSlots();
+            }
         }
     }
 
     GameObject InstantiateSlot(int index){
-        GameObject invSlot = Instantiate(invetorySlotPrefab, inventoryContentPanel.transform);
-        InventorySlot slot = invSlot.GetComponent<InventorySlot>();
-        slot.ResourcesItemPath = ResourcesItemPath;
-        slot.displayPanel = inventoryContentPanel;
-        slot.UpdateSlot(inv.getItem(index));
-        return invSlot;
+        if(inventoryToggledPannel.activeInHierarchy){
+            GameObject invSlot = Instantiate(invetorySlotPrefab, inventoryContentPanel.transform);
+            inventoryArray.Add(invSlot);
+            InventorySlot slot = invSlot.GetComponent<InventorySlot>();
+            slot.ResourcesItemPath = ResourcesItemPath;
+            slot.displayPanel = inventoryContentPanel;
+            slot.UpdateSlot(inv.getItem(index));
+            return invSlot;
+        }
+        return null;
     }
 
     public void addItem( Item item){
         inv.addItem(item);
         int index = inv.findItemIndex(item.id);
-        if(index >= inventoryArray.Count) inventoryArray.Add(InstantiateSlot(index));
+        if(index >= inventoryArray.Count){
+            GameObject newSlot = InstantiateSlot(index);
+        }
         
         if(index != -1) updateSlot(index);
     }
@@ -74,8 +85,11 @@ public class InventoryManager : MonoBehaviour {
 
         if(inv.getNum(index) <= 0){
             inv.deleteItem(id);
-            Destroy(inventoryArray[index]);
-            inventoryArray.RemoveAt(index);
+            if(inventoryArray.Count > index){
+                Destroy(inventoryArray[index]);
+                inventoryArray.RemoveAt(index);
+            }
+            
         }
     }
 
@@ -116,8 +130,33 @@ public class InventoryManager : MonoBehaviour {
         }
     }
 
-    void updateSlot(int index){
-        inventoryArray[index].GetComponent<InventorySlot>().UpdateSlot(inv.getItem(index));
+    bool updateSlot(int index){
+        //Don't try to update if these things are not active!
+        if(!inventoryContentPanel.activeInHierarchy) return false;
+
+        //get the slot to be updated:
+        GameObject slotObject;
+        if(index >= inventoryArray.Count){
+            //create it if it doesn't yet exist:
+            slotObject = InstantiateSlot(index);
+        }else{
+            slotObject = inventoryArray[index];
+        }
+
+        //get the part which makes it an Inventroy Slot
+        InventorySlot slot = slotObject.GetComponent<InventorySlot>();
+
+        //Then update!
+        slot.UpdateSlot(inv.getItem(index));
+        
+        return true;
+    }
+
+    void updateAllSlots(){
+        for(int i = 0; i< inv.Count(); i++){
+            updateSlot(i);
+        }
     }
 
 }
+        
