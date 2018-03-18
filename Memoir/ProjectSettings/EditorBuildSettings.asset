@@ -56,3 +56,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Motel Room 1.unity
     guid: e7b74219ccbae98498e1e24a2a4f563f
+  - enabled: 1
+    path: Assets/Scenes/Station2/OpenLab.unity
+    guid: f2635ae6372529340be25891157ae74f
+  - enabled: 1
+    path: Assets/Scenes/Station2/Garden.unity
+    guid: 20e0c040e91ce4444bf2c418e5d5e847
+  - enabled: 1
+    path: Assets/Scenes/Station2/Chase/ChaseLab.unity
+    guid: 9552d779fa6aeff4790de41993dcb3f2
+  - enabled: 1
+    path: Assets/Scenes/Station2/Chase/ChaseElevator.unity
+    guid: 671ad4d88040118409c4ccc72d7fcad0
+  - enabled: 1
+    path: Assets/Scenes/Station2/Chase/EscapetheRoom.unity
+    guid: 35e148141e52fcb4ba28a09fac80a710
+  - enabled: 1
+    path: Assets/Scenes/SpaceStationPlant.unity
+    guid: 252b2396b63ccc545bb006b87c224cd8

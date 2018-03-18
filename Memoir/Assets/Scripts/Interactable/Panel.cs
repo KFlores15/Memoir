@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Panel : Interactable {
 
@@ -18,6 +19,7 @@ public class Panel : Interactable {
     private bool exited = false;
     private int[] solution;
     private int[] guess;
+    private int correct = 0;
 
 	void Awake ()
     {
@@ -169,6 +171,7 @@ public class Panel : Interactable {
             door.unlocked = true;
             status.color = Color.green;
             truth = 0;
+            correct = 1;
         }
     }
 
@@ -177,6 +180,12 @@ public class Panel : Interactable {
 		puzzle_canvas.enabled = false;
 		if(door.unlocked){
         	exited = true;
+            if(correct == 1){
+                SceneManager.LoadScene("StationElevator2");
+            }
+            else{
+                SceneManager.LoadScene("StationElevator1");
+            }
 		}
     }
 }

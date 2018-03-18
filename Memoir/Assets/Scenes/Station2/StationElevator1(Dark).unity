@@ -372,7 +372,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 1343172503}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  load: 4
+  load: 21
   spawn: {x: -1.565, y: -0.137}
   face_right: 1
   change_sprite: 0
@@ -472,10 +472,10 @@ MonoBehaviour:
   interactable_collider: {fileID: 1343172503}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  name_of_object: Station Entrance
+  name_of_object: Station Escape
   instruction: 
   isDoor: 1
-  load: 4
+  load: 21
   spawn: {x: -1.565, y: -0.137}
   face_right: 1
   change_sprite: 0

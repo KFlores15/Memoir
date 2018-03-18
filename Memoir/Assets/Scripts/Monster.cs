@@ -38,7 +38,7 @@ public class Monster : MonoBehaviour
 
     private void Behaviour(bool follow)
     {
-        transform.Translate(Vector2.left * (4/2) * Time.deltaTime / 2);
+        transform.Translate(Vector2.left * (9/2) * Time.deltaTime / 2);
         Debug.Log("Attempting to follow player");
     }
     
