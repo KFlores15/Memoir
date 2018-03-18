@@ -290,7 +290,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e451ea6dd4d20c4abff91dd49c6e675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   dis: 10
+=======
+  dis: 3
+>>>>>>> 5a28517b877ce9dd920ed7c9e2e24315d5515f22
   background: {fileID: 1671910906}
   hook: {fileID: 1154004511}
   on: {fileID: 21300000, guid: bf326a5f680398b43b79d2f013f85b65, type: 3}
