@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Eraser.cs" />
+     <Compile Include="Assets\GameQuit.cs" />
+     <Compile Include="Assets\Instructions.cs" />
      <Compile Include="Assets\mouseSpeed.cs" />
      <Compile Include="Assets\Scripts\DeactivateOnStart.cs" />
      <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
@@ -79,6 +81,11 @@
      <Compile Include="Assets\Scripts\PH.cs" />
      <Compile Include="Assets\Scripts\PH_NoDoor.cs" />
      <Compile Include="Assets\Scripts\PHMusic.cs" />
+     <Compile Include="Assets\Scripts\PlaceholderTesting\Scripts\Escape.cs" />
+     <Compile Include="Assets\Scripts\PlaceholderTesting\Scripts\OpenLabDoor.cs" />
+     <Compile Include="Assets\Scripts\PlaceholderTesting\Scripts\SecondFloorElevator.cs" />
+     <Compile Include="Assets\Scripts\PlaceholderTesting\Scripts\ThirdFloorElevator.cs" />
+     <Compile Include="Assets\Scripts\PlantMarble.cs" />
      <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
      <Compile Include="Assets\Scripts\Puzzle.cs" />
      <Compile Include="Assets\Scripts\ScalingBackground.cs" />

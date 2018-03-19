@@ -72,5 +72,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Station2/Chase/EscapetheRoom.unity
     guid: 35e148141e52fcb4ba28a09fac80a710
   - enabled: 1
-    path: Assets/Scenes/SpaceStationPlant.unity
+    path: Assets/Scenes/Station2/SpaceStationPlant.unity
     guid: 252b2396b63ccc545bb006b87c224cd8

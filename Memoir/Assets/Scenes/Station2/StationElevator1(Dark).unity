@@ -472,7 +472,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 1343172503}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  name_of_object: Station Escape
+  name_of_object: Station Entrance
   instruction: 
   isDoor: 1
   load: 21

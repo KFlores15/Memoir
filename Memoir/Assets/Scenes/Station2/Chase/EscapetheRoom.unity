@@ -2387,7 +2387,7 @@ MonoBehaviour:
   interactable_collider: {fileID: 1162662915}
   player: {fileID: 0}
   player_collider: {fileID: 0}
-  name_of_object: Bathroom
+  name_of_object: ???
   instruction: 
   isDoor: 1
   load: 15

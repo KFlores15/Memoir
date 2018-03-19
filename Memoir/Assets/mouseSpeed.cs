@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class mouseSpeed : MonoBehaviour {
 
@@ -36,8 +37,13 @@ public class mouseSpeed : MonoBehaviour {
             currentX = Input.mousePosition.x;
             currentY = Input.mousePosition.y;
 
-            if (hook.transform.position.y > 0)
+			if (hook.transform.position.y > 0) {
                 hook.transform.Translate(0, -0.01f, 0);
+			}
+
+			if (hook.transform.position.y > -0.01f && hook.transform.position.y < -0.009f) {
+				GameObject.Find("Empty").GetComponent<Text>().enabled = true;
+			}
 
             if (Mathf.Abs(currentX - previousX) > dis || Mathf.Abs(currentY - previousY) > dis)
                 pressed = false;
@@ -54,6 +60,7 @@ public class mouseSpeed : MonoBehaviour {
 
             if (hook.transform.position.y < 0.74)
                 hook.transform.Translate(0, 0.01f, 0);
+				GameObject.Find("Empty").GetComponent<Text>().enabled = false;
         }
     }
 }
