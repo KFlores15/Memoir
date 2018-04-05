@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SpaceCutscne1 : MonoBehaviour
 {
+	void Start() {
+		GetComponent<DialogueTrigger>().TriggerDialogue();
+
+	}
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))

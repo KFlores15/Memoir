@@ -57,6 +57,7 @@
      <Compile Include="Assets\mouseSpeed.cs" />
      <Compile Include="Assets\Scripts\DeactivateOnStart.cs" />
      <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Dialogue_Initiator.cs" />
      <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />

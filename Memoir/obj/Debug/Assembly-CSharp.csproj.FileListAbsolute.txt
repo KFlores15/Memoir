@@ -71,4 +71,3 @@ C:\Users\Matt\Documents\GitHub\Memoir\Memoir\Temp\bin\Debug\UnityEditor.VR.xml
 C:\Users\Matt\Documents\GitHub\Memoir\Memoir\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 C:\Users\Matt\Documents\GitHub\Memoir\Memoir\obj\Debug\Assembly-CSharp.dll
 C:\Users\Matt\Documents\GitHub\Memoir\Memoir\obj\Debug\Assembly-CSharp.pdb
-C:\Users\Matt\Documents\GitHub\Memoir\Memoir\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
